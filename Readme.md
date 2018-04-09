@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Кузнецов](https://up.htmlacademy.ru/adaptive/14/user/619205).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://up.htmlacademy.ru/adaptive/14/user/7956).
 
 ---
 
