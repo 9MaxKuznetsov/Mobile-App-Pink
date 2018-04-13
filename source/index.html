@@ -9,12 +9,14 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
+      <div class="page-logo">
+        <a class="page-logo__link">PINK</a>
+      </div>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="#">PINK</a></li>
-        <li class="site-list__item"><a href="#">Главная</a></li>
-        <li class="site-list__item"><a href="#">Фотографии</a></li>
-        <li class="site-list__item"><a href="#">Конкурс</a></li>
-        <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+        <li class="site-list__item"><a class="site-list__item-link">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__item-link" href="#">Фотографии</a></li>
+        <li class="site-list__item"><a class="site-list__item-link" href="#">Конкурс</a></li>
+        <li class="site-list__item"><a class="site-list__item-link" href="#">HTML ACADEMY</a></li>
       </ul>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
     </nav>
@@ -24,13 +26,13 @@
     <section class="app">
       <div class="app__logo"><img src="http://placehold.it/320x462"></div>
       <div class="app__download download">
-        <h3 class="download__link">Скачать приложение</h3>
+        <h3 class="download__header">Скачать приложение</h3>
         <ul class="download__list os-list">
           <li class="os-list__item"><a href="#"><span class="visually-hidden">Apple</span><img src="http://placehold.it/47x56"></a></li>
           <li class="os-list__item"><a href="#"><span class="visually-hidden">Android</span><img src="http://placehold.it/47x56"></a></li>
           <li class="os-list__item"><a href="#"><span class="visually-hidden">Windows</span><img src="http://placehold.it/47x56"></a></li>
         </ul>
-        <b>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</b>
+        <p class="os-list__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
     <section class="advantages">
@@ -61,11 +63,15 @@
     <section class="feedback">
       <div class="feedback-wrapper slider">
         <ul class="feedback__list slider__list">
-          <li class="feedback_quote">
+          <li class="feedback__quote">
             <h3 class="feedback__author">Николай Петров</h3>
             <p class="feedback__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
+          </li>
+          <li class="feedback__quote">
+          </li>
+          <li class="feedback__quote">
           </li>
         </ul>
         <p class="feedback__toggles slider__toggles">
