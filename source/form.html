@@ -15,7 +15,7 @@
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
         <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
-        <li class="site-list__item"><a class="site-list__item-link link--active">Конкурс</a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Конкурс</a></li>
         <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -23,7 +23,7 @@
   </header>
   <main class="page-main contest">
     <div class="contest__header">
-      <img src="http://placehold.it/320x462">
+      <img class="contest__image" src="http://placehold.it/320x462">
       <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest__application">
@@ -33,21 +33,21 @@
         </p>
       </div>
       <form class="contest__form form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="form-list">
-          <li class="form-list__item">
+        <ul class="form__list">
+          <li class="form__item">
             <input class="form__text-input" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию *" />
-            <label class="text-input__title" for="last-name">Фамилия:</label>
+            <label class="form__title" for="last-name">Фамилия:</label>
           </li>
-          <li class="form-list__item">
+          <li class="form__item">
             <input class="form__text-input" name="first-name" type="text" id="first-name" placeholder="Укажите имя *" />
-            <label class="text-input__title" for="first-name">Имя:</label>
+            <label class="form__title" for="first-name">Имя:</label>
           </li>
-          <li class="form-list__item">
+          <li class="form__item">
             <input class="form__text-input" name="patronymic" type="text" id="patronymic" placeholder="Ну и отчество тоже" />
-            <label class="text-input__title" for="patronymic">Отчество:</label>
+            <label class="form__title" for="patronymic">Отчество:</label>
           </li>
         </ul>
-        <div class="form__achievements achievements">
+        <div class="form__group">
           <h3 class="form__header">Ваши безбашенные достижения в путешествии</h3>
           <ul class="achievements-list">
             <li class="achievements-list__item">
@@ -77,17 +77,17 @@
           </ul>
         </div>
         <div class="contacts">
-          <ul class="form-list">
-            <li class="form-list__item">
+          <ul class="form__list">
+            <li class="form__item">
               <input class="form__text-input" name="phone-number" type="text" id="contacts__phone-number" placeholder="Номер, пожалуйста" />
-              <label class="text-input__title" for="contacts__phone-number">Номер телефона</label>
+              <label class="form__title" for="contacts__phone-number">Номер телефона</label>
             </li>
-            <li class="form-list__item">
+            <li class="form__item">
               <input class="form__text-input" name="e-mail" type="text" id="contacts__e-mail" placeholder="Введите почту *" />
-              <label class="text-input__title" for="contacts__e-mail">Адрес почты</label>
+              <label class="form__title" for="contacts__e-mail">Адрес почты</label>
             </li>
         </div>
-        <div class="application">
+        <div class="form__group">
           <h3 class="form__header">С каким приложением путешествовали?</h3>
           <ul class="application-list">
             <li class="application-list__item">
@@ -105,7 +105,7 @@
         </div>
         <div class="describe">
           <textarea id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
-          <label class="text-input__title" for="describe__text">Опишите свои эмоции</label>
+          <label class="form__title" for="describe__text">Опишите свои эмоции</label>
         </div>
         <button class="button button--submit" type="submit">Отправить форму</button>
         <span class="application__required">* — обязательные поля</span>
