@@ -14,31 +14,31 @@
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
-        <li class="site-list__item"><a class="site-list__item-link">Фотографии</a></li>
+        <li class="site-list__item"><a class="site-list__item-link link--active">Фотографии</a></li>
         <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a class="site-list__item-link" href="#">HTML ACADEMY</a></li>
+        <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
     </nav>
   </header>
-  <main class="page-main photo">
-    <div class="photo__header">
-      <img src="http://placehold.it/320x462">
-      <h1 class="photo__title">Фотографии пользователей</h1>
+  <main class="page-main gallery">
+    <div class="gallery__header">
+      <img class="gallery__image" src="http://placehold.it/320x462">
+      <h1 class="gallery__title">Фотографии пользователей</h1>
     </div>
-    <section class="photo__gallery">
-      <div class="photo__gallery-top">
-        <p class="gallery__description">
+    <section class="photo">
+      <div class="photo__top">
+        <p class="photo__description">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
       </div>
       <ul class="photo-list">
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Анна</b> <span class="post__date">(5 минут назад)</span>
-              <p>
+              <p class="post__description">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
               <span class="post__likes">Нравится: 215</span>
@@ -46,11 +46,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Левон</b> <span class="post__date">(5 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <span class="post__likes">Нравится: 356</span>
@@ -58,11 +58,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Антон</b> <span class="post__date">(12 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Соседи будут рады!
               </p>
               <span class="post__likes">Нравится: 666</span>
@@ -70,11 +70,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Борис</b> <span class="post__date">(20 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <span class="post__likes">Нравится: 215</span>
@@ -82,11 +82,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Сергей</b> <span class="post__date">(25 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Самая кубанская в мире!
               </p>
               <span class="post__likes">Нравится: 4</span>
@@ -94,11 +94,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Максим</b> <span class="post__date">(40 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Где снег-то?
               </p>
               <span class="post__likes">Нравится: 150</span>
@@ -106,11 +106,11 @@
           </article>
         </li>
         <li class="photo-list__item">
-          <article class="photo__item post">
+          <article class="post">
             <img src="http://placehold.it/320x140">
-            <div class="photo__about">
+            <div class="post__about">
               <b class="post__author">Надежда</b> <span class="post__date">(45 часов назад)</span>
-              <p>
+              <p class="post__description">
                 Всем GM и взаимные лайки!
               </p>
               <span class="post__likes">Нравится: 2560</span>
@@ -118,31 +118,31 @@
           </article>
         </li>
       </ul>
-      <div class="photo__gallery-bottom">
-        <p class="gallery__description">
+      <div class="photo-bottom">
+        <p class="photo__description">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
     </section>
-    <section class="photo__post">
+    <section class="photo-add">
       <img src="http://placehold.it/280x375">
-      <div class="photo__filter">
+      <div class="filter">
         <ul class="filter-list">
-          <li class="filter-list__item cut">
+          <li class="filter-list__item filter-list--cut">
             <img src="http://placehold.it/50x50">
           </li>
-          <li class="filter-list__item pouring">
+          <li class="filter-list__item filter-list--pouring">
             <img src="http://placehold.it/50x50">
           </li>
-          <li class="filter-list__item brightness">
+          <li class="filter-list__item filter-list--brightness">
             <img src="http://placehold.it/50x50">
           </li>
         </ul>
-        <div class="photo__range">
+        <div class="filter__range">
           <img src="http://placehold.it/245x30">
         </div>
       </div>
-      <div class="photo__actions">
+      <div class="photo-add__actions">
         <button class="actions__button post" type="button">Запостить</button>
         <button class="actions__button deny" type="button">Отмена</button>
       </div>
@@ -151,11 +151,12 @@
   <footer class="page-footer">
     <div class="page-footer__upper">
       <a class="page-footer-logo__link" href="#"><img src="http://placehold.it/147x40"></a>
-    </div><div class="page-footer__middle">
+    </div>
+    <div class="page-footer__middle">
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__button" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">VK</span></a></li>
-        <li class="social-list__item"><a class="social-list__button" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-list__item"><a class="social-list__button" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">VK</span></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="http://placehold.it/45x45"/><span class="visually-hidden">Instagram</span></a></li>
       </ul>
     </div>
     <div class="page-footer__bottom">
