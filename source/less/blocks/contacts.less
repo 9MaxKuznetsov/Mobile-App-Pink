@@ -25,3 +25,50 @@
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
 }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.contact__option {
+  margin: 0 auto;
+}
+
+.contact__value {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: @tablet-width;
+  }
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contacts__item {
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: @desktop-width;
+  }
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
