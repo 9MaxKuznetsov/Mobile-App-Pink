@@ -5,6 +5,10 @@
 }
 .page-header__title {
   display: none;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: auto;
+  font-weight: @light;
 }
 .index-header.page-header {
  background:
@@ -15,11 +19,18 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: 660px;
+    min-height: 730px;
+  }
+  .page-header__title {
+    display: block;
+    width: 200px;
+    text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
+    min-height: 850px;
   }
 }
