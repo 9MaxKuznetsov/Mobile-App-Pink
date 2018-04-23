@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: auto;
   color: @navy;
+  margin: 0 auto;
 }
 
 .contact__value {
@@ -19,6 +20,8 @@
   line-height: auto;
   color: @cherry;
   text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contacts__map {
@@ -37,25 +40,18 @@
   width: 250px;
 }
 
-.contact__option {
-  margin: 0 auto;
-}
-
-.contact__value {
-  margin: 0 auto;
-  text-align: center;
-}
-
 @media (min-width: @tablet-width) {
   .contacts {
     width: @tablet-width;
   }
+
   .contacts__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .contacts__item {
     width: 230px;
   }
@@ -65,6 +61,7 @@
   .contacts {
     width: @desktop-width;
   }
+
   .contacts__list {
     display: flex;
     flex-direction: row;
