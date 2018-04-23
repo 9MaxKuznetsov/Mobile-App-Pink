@@ -1,12 +1,22 @@
 .post {
-  background-color: @lightgray;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
+.post__about {
+  width: 280px;
+  margin: 0 auto;
+  background-color: @lightgray;
+}
 .post__author {
   font-weight: @bold;
   .set-default-paragraph;
 }
 
+.post__photo {
+  margin: 0 auto;
+}
 .post__description {
   .set-default-paragraph;
 }
@@ -17,4 +27,35 @@
 
 .post__date {
   .set-date;
+}
+
+@media (min-width: @tablet-width) {
+  .post {
+    width: 300px;
+    min-height: 455px;
+    margin: 0;
+    padding: 0;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .post-title {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .post-title__about {
+    width: 620px;
+  }
+
+  .post__about {
+    min-height: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post {
+    width: 300px;
+  }
+
 }
