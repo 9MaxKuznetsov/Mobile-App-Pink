@@ -1,10 +1,5 @@
 .photo-list {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .photo-list__item {
@@ -13,9 +8,12 @@
 
 @media (min-width: @tablet-width) {
   .photo-list {
-    min-height: 1830px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .photo-list__item {
-    width: 300px;
-  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

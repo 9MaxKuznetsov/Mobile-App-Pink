@@ -1,8 +1,7 @@
 .page-header {
-  margin: 0;
-  padding: 0;
-  background: @navy url("../img/bg-back-mobile@1x.jpg") no-repeat;
   min-height: 237px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .page-header__main-title {
@@ -22,11 +21,17 @@
   margin-left: 70px;
 }
 
+.page-header__wrapper {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  width: 100%;
+  background-size: 100% auto;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
-    width: 660px;
+    width: 620px;
     min-height: 440px;
-    background-size: cover;
+    margin: 0 auto;
   }
 
   .page-header__title {
@@ -39,7 +44,6 @@
   .page-header__introduction {
     width: 390px;
     margin-top: -300px;
-    margin-left: 120px;
   }
 
   .page-header__main-title {
@@ -50,7 +54,8 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-height: 395px;
-    width: 1200px;
+    width: 960px;
+    margin: 0 auto;
   }
 
   .page-header__introduction {
