@@ -1,39 +1,25 @@
 .main-nav__header {
   display: flex;
   flex-direction: row;
-  min-height: 66px;
+  justify-content: space-between;
+  min-height: 65px;
 }
 
 .main-nav__list {
   display: none;
 }
 
-.main-nav__header-wrapper {
+.main-nav__wrapper {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__header-wrapper {
+  .main-nav__header {
     min-height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__header-wrapper {
-    min-height: 110px;
-  }
 
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    background-color: inherit;
-    justify-content: space-between;
-    align-self: center;
-  }
 }

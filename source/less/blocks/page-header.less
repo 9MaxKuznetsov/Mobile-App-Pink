@@ -15,8 +15,10 @@
 }
 
 .page-header__introduction {
-  margin-top: -380px;
-  margin-left: 70px;
+  width: 200px;
+  @media (min-width: @tablet-width) {
+  width: 370px;
+  }
 }
 
 .page-header__wrapper {
@@ -26,31 +28,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    min-height: 440px;
-  }
-
-  .page-header__title {
-    display: block;
-    text-align: center;
-    font-size: 50px;
-  }
-
-  .page-header__introduction {
-    margin-top: -300px;
-  }
-
-  .page-header__main-title {
-    font-size: 50px;
-  }
+.page-header {
+  min-height: 440px;
+}
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
-    min-height: 395px;
-  }
-
-  .page-header__introduction {
-    margin-left: 400px;
-  }
+.page-header {
+  min-height: 395px;
+}
 }

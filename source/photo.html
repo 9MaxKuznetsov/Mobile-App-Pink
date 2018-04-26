@@ -10,8 +10,8 @@
 <body>
   <div class="page-header__wrapper">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__header-wrapper">
+      <div class="main-nav__wrapper">
+        <nav class="main-nav center">
           <div class="main-nav__header">
             <a class="page-logo__link">
               <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
@@ -24,15 +24,16 @@
             </ul>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </div>
-        </div>
-      </nav>
-      <div class="page-header__introduction">
+        </nav>
+      </div>
+      <div class="page-header__introduction center">
         <h1 class="page-header__main-title">Фотографии пользователей</h1>
       </div>
     </header>
   </div>
   <div class="page-main__wrapper">
-    <main class="page-main center">
+    <main class="page-main">
+      <div class="center">
       <section class="photo">
         <div class="photo__top">
           <p class="photo__description">
@@ -131,32 +132,34 @@
           </p>
         </div>
       </section>
-      <section class="photo-add">
-        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
-        <div class="filter">
-          <ul class="filter-list">
-            <li class="filter-list__item filter-list__item--crop">
-              <img src="img/icon-editor-crop.svg" width="48" height="48">
-            </li>
-            <li class="filter-list__item filter-list--fill">
-              <img src="img/icon-editor-fill.svg" width="48" height="48">
-            </li>
-            <li class="filter-list__item filter-list--brightness">
-              <img src="img/icon-editor-contrast.svg" width="32" height="32">
-            </li>
-          </ul>
-          <div class="filter__range">
-            <img src="http://placehold.it/245x30">
+      </div>
+      <div class="photo-add__wrapper">
+        <section class="photo-add center">
+          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+          <div class="photo-add__controls">
+          <div class="filter">
+            <ul class="filter-list">
+              <li class="filter-list__item filter-list__item--crop">
+                <img src="img/icon-editor-crop.svg" width="48" height="48">
+              </li>
+              <li class="filter-list__item filter-list--fill">
+                <img src="img/icon-editor-fill.svg" width="48" height="48">
+              </li>
+              <li class="filter-list__item filter-list--brightness">
+                <img src="img/icon-editor-contrast.svg" width="32" height="32">
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="photo-add__actions">
-          <button class="actions__button post" type="button">Запостить</button>
-          <button class="actions__button deny" type="button">Отмена</button>
-        </div>
-      </section>
+          <div class="photo-add__actions">
+            <button class="actions__button post" type="button">Запостить</button>
+            <button class="actions__button deny" type="button">Отмена</button>
+          </div>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
-  <footer class="page-footer ">
+  <footer class="page-footer center">
     <div class="page-footer__upper">
       <a class="page-footer-logo__link" href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
     </div>
