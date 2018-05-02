@@ -1,6 +1,6 @@
-.tariff {
+.tariff__wrapper {
+  background: url("../img/bg-triangle-white.svg") no-repeat;
   background-color: @lightgray;
-  overflow: hidden;
 }
 
 .tariff__name {
@@ -26,24 +26,4 @@
   text-transform: uppercase;
   .set-default-paragraph;
   background-color: #ffffff;
-}
-
-@media (min-width: @tablet-width) {
-  .tariff__list {
-    width: 625px;
-  }
-
-  .tariff {
-    min-width: 660px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .tariff {
-    width: 1200px;
-  }
-
-  .tariff__list {
-    width: 950px;
-  }
 }

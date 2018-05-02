@@ -1,17 +1,23 @@
 .index-header {
+  min-height: 735px;
+}
+
+.index-header__wrapper {
+  width: 100%;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 175px, url("../img/bg-back-mobile@1x.jpg") no-repeat @navy;
-  min-height: 730px;
+  background-size: 100% auto;
 }
 
 @media (min-width: @tablet-width) {
-   .index-header {
-     background-size: cover;
-   }
+  .index-header {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .index-header {
-    width: 1200px;
-    min-height: 850px;
+    min-height: 853px;
   }
 }

@@ -1,25 +1,22 @@
 .advantages__main-title {
-  min-width: 215px;
-  margin: 0;
   text-align: center;
   .set-default-header;
 }
 
 .advantages__title {
   .set-bold-title;
+  text-align: center;
 }
 
 .advantages__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__description {
   .set-default-paragraph;
-}
-
-.advantages__main {
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .advantages {
@@ -28,62 +25,37 @@
 }
 
 .advantages__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  width: 100%;
   background-color: @lightgray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 660px;
-  }
-
-  .advantages__wrapper {
+  .advantages__introduction {
     display: flex;
     flex-direction: row;
-    width: 660px;
-    background: url("../img/bg-triangle-white.svg") no-repeat;
-    background-color: @lightgray;
+    justify-content: space-between;
   }
 
   .advantages__main {
-    order: 3;
-    width: 340px;
-    background: none;
+    order: 2;
   }
 
-  .advantages__footer {
-    width: 320px;
-  }
-
-  .advantages__main-title {
-    width: 600px;
-    margin-left: 25px;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .advantages__main-title:not(:first-of-type) {
-    width: 345px;
-    margin-left: 140px;
+  .advantages__list {
+    width: 310px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages__header {
-    width: 1200px;
-  }
-
   .advantages__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 900px;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 300px;
   }
 
   .advantages__footer {
@@ -91,14 +63,12 @@
   }
 
   .advantages__wrapper {
-    width: 1200px;
     background: url("../img/bg-triangle-white.svg") no-repeat;
     background-color: @lightgray;
   }
 
   .advantages__main-title {
     width: 750px;
-    margin-left: 200px;
     font-size: 50px;
   }
 
