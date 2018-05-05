@@ -28,7 +28,15 @@
   display: none;
 }
 
+.form__group {
+  background-color: @lightgray;
+}
+
 @media (min-width: @tablet-width) {
+  .form__group {
+    background-color: white;
+  }
+
   .form__item--full-name {
     display: flex;
     flex-direction: row;
@@ -46,6 +54,14 @@
 
   .form__list--full-name {
     order: 1;
+  }
+
+  .form__group--application {
+    order: 2;
+  }
+
+  .form__group--achievements {
+    order: 4;
   }
 
   .form__header--contacts {
@@ -74,6 +90,10 @@
 
 @media (min-width: @desktop-width) {
   .form__list--full-name {
+    width: 436px;
+  }
+
+  .form__group--application {
     width: 436px;
   }
 }
