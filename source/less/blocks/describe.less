@@ -1,0 +1,20 @@
+.describe {
+  display: flex;
+  flex-direction: column;
+}
+
+.describe label {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .describe {
+    order: 5;
+    border: 2px solid #e5e5e5;
+  }
+
+  .describe textarea {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
