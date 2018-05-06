@@ -1,10 +1,11 @@
 .photo-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .photo-list__item {
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -12,6 +13,24 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .photo-list__item {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .photo-list__item {
+    margin: 0;
+    margin-bottom: 55px;
   }
 }

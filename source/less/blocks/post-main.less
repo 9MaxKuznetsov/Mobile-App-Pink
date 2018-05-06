@@ -16,6 +16,8 @@
 }
 
 .post-main__about {
+  width: 280px;
+  margin: 0 auto;
   background-color: @lightgray;
 }
 
@@ -24,8 +26,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .post-main {
+    width: 660px;
+  }
   .post-main__photo {
     width: 100%;
+  }
+
+  .post-main__about {
+    width: 620px;
   }
 }
 
@@ -36,5 +45,9 @@
 
   .post-main__photo {
     width: 100%;
+  }
+
+  .post-main__about {
+    width: 940px;
   }
 }
