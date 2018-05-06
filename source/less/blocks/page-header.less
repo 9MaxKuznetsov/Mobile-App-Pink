@@ -5,6 +5,7 @@
 }
 
 .page-header--hand {
+  min-height: 735px;
   width: 100%;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 44% 175px, url("../img/bg-back-mobile@1x.jpg") no-repeat @darknavy center 0;
 }
@@ -31,12 +32,17 @@
   width: 230px;
 }
 
+.page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 440px;
   }
 
-  .page-header.index-header {
+  .page-header--hand {
     min-height: 729px;
   }
 
@@ -64,6 +70,10 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-height: 395px;
+  }
+
+  .page-header--hand {
+    min-height: 853px;
   }
 
   .page-header__introduction--contest {
