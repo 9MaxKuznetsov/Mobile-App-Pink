@@ -5,6 +5,7 @@
 
 .tariff__list {
   width: 1120px;
+  margin-top: 116px;
 }
 
 .tariff td {
@@ -12,26 +13,51 @@
   outline: 1px solid #e5e5e5;
 }
 
+.tariff__name {
+  outline: 1px solid #e5e5e5;
+  color: #ffffff;
+  background-color: @navy;
+}
 .tariff__list--index {
   margin-left: -540px;
 }
 
-.tariff__name {
-  color: #ffffff;
-
-  background-color: @navy;
+.tariff__type {
+  display: flex;
+  flex-direction: column;
 }
 
 .tariff__option {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  padding: 17px 0px 2px 0px;
+}
+
+.tariff__option--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -1px;
+
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
 }
 
 .tariff__price {
   font-weight: @light;
   font-size: 24px;
   line-height: 30px;
+  padding-bottom: 20px;
 }
 
 .tariff__value {
@@ -39,8 +65,14 @@
   text-transform: uppercase;
   .set-default-paragraph;
   background-color: #ffffff;
+  padding: 15px 0px 15px 23px;
 }
 
+.tariff__toggles {
+  padding-left: 120px;
+  margin-top: 35px;
+  padding-bottom: 22px;
+}
 @media (min-width: @tablet-width) {
   .tariff {
     overflow: visible;
