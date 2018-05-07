@@ -8,13 +8,13 @@
   margin-top: 116px;
 }
 
-.tariff td {
+.tariff__value {
   width: 280px;
-  outline: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .tariff__name {
-  outline: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   color: #ffffff;
   background-color: @navy;
 }
@@ -32,7 +32,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 17px 0 2px 0;
+  padding: 17px 0px 2px 0px;
 }
 
 .tariff__option--hit {
@@ -78,17 +78,95 @@
   .tariff {
     overflow: visible;
     width: @tablet-width;
-    margin: 0 auto;
+    margin: 0px 0px 0px 36px;
+    padding-top: 92px;
+    padding-bottom: 70px;
   }
 
-  .tariff td {
-    width: 148px;
+  .tariff__value {
+    width: 152px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+  }
+
+  .tariff tr {
+    border: none;
   }
 
   .tariff__list--index {
     margin: 0 auto;
     width: 620px;
-    padding-bottom: 150px;
+  }
+
+  .tariff__value {
+    padding: 8px 0px 7px 13px;
+    text-transform: none;
+  }
+
+  .tariff__option {
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .tariff__price {
+    font-size: 18px;
+    padding: 0px 0px 8px 0px;
+    margin-top: -4px;
+  }
+
+  .tariff__name {
+    width: 100px;
+    border: none;
+    border-right: 2px solid #e5e5e5;
+    padding: 4px 0px 0px 0px;
+  }
+
+  .tariff__name:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .tariff__name:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .smiles {
+    display: none;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .comments {
+    display: none;
+  }
+
+  .tariff__value:first-of-type {
+    border-top: 2px solid #e5e5e5;
+  }
+
+  .tariff__option--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 0;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .tariff__toggles {
+    display: none;
   }
 }
 
