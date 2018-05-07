@@ -1,5 +1,16 @@
 .post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__about {
   background-color: @lightgray;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.post__photo {
+  margin: 0 auto;
 }
 
 .post__author {
@@ -17,4 +28,23 @@
 
 .post__date {
   .set-date;
+}
+
+@media (min-width: @tablet-width) {
+  .post {
+    width: 300px;
+  }
+
+  .post__photo {
+    width: 100%;
+  }
+
+  .post-title__about {
+    width: 620px;
+  }
+
+  .post__about {
+    min-height: 155px;
+    width: 100%;
+  }
 }

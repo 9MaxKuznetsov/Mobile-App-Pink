@@ -1,5 +1,19 @@
 .tariff {
-  background-color: @lightgray;
+  overflow: hidden;
+  width: 320px;
+}
+
+.tariff__list {
+  width: 1120px;
+}
+
+.tariff td {
+  width: 280px;
+  outline: 1px solid #e5e5e5;
+}
+
+.tariff__list--index {
+  margin-left: -540px;
 }
 
 .tariff__name {
@@ -24,4 +38,37 @@
   line-height: 30px;
   text-transform: uppercase;
   .set-default-paragraph;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff {
+    overflow: visible;
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .tariff td {
+    width: 148px;
+  }
+
+  .tariff__list--index {
+    margin: 0 auto;
+    padding: 0;
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff__list--index {
+    width: 940px;
+  }
+
+  .tariff {
+    width: @desktop-width;
+  }
+
+  .tariff td {
+    width: 236px;
+  }
 }

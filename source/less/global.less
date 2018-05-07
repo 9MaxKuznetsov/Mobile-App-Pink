@@ -1,14 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  width: 320px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  /*  * {
+    outline: 1px solid red;
+  } */
 }
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
   clip: rect(0 0 0 0);
+}
+
+.center {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .center {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .center {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }

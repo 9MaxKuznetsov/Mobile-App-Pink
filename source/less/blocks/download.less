@@ -1,5 +1,12 @@
 .download {
-  background-color: @darknavy;
+  display: flex;
+  flex-direction: column;
+}
+
+.download__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .download__header {
@@ -8,6 +15,9 @@
   color: #ffffff;
 }
 
-.download__list {
-  list-style: none;
+.download__description {
+  font-weight: @light;
+  font-size: 14px;
+  line-height: 24px;
+  color: @white;
 }

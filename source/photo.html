@@ -8,149 +8,156 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="page-logo">
-        <a class="page-logo__link" href="index.html"><image src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav center">
+          <div class="main-nav__header">
+            <a class="page-logo-link" href="index.html">
+              <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
+            </a>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+        </nav>
       </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
-        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Фотографии</a></li>
-        <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
-      </ul>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-    </nav>
-  </header>
-  <main class="page-main gallery">
-    <div class="gallery__header">
-      <h1 class="gallery__title">Фотографии пользователей</h1>
-    </div>
-    <section class="photo">
-      <div class="photo__top">
-        <p class="photo__description">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
+      <div class="page-header__introduction center">
+        <h1 class="page-header__main-title">Фотографии пользователей</h1>
       </div>
-      <ul class="photo-list">
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
-            <div class="post__about">
-              <b class="post__author">Анна</b> <span class="post__date">(5 минут назад)</span>
-              <p class="post__description">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <span class="post__likes">Нравится: 215</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
-            <div class="post__about">
-              <b class="post__author">Левон</b> <span class="post__date">(5 часов назад)</span>
-              <p class="post__description">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <span class="post__likes">Нравится: 356</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
-            <div class="post__about">
-              <b class="post__author">Антон</b> <span class="post__date">(12 часов назад)</span>
-              <p class="post__description">
-                Соседи будут рады!
-              </p>
-              <span class="post__likes">Нравится: 666</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
-            <div class="post__about">
-              <b class="post__author">Борис</b> <span class="post__date">(20 часов назад)</span>
-              <p class="post__description">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <span class="post__likes">Нравится: 215</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
-            <div class="post__about">
-              <b class="post__author">Сергей</b> <span class="post__date">(25 часов назад)</span>
-              <p class="post__description">
-                Самая кубанская в мире!
-              </p>
-              <span class="post__likes">Нравится: 4</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="От первого лица">
-            <div class="post__about">
-              <b class="post__author">Максим</b> <span class="post__date">(40 часов назад)</span>
-              <p class="post__description">
-                Где снег-то?
-              </p>
-              <span class="post__likes">Нравится: 150</span>
-            </div>
-          </article>
-        </li>
-        <li class="photo-list__item">
-          <article class="post">
-            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло">
-            <div class="post__about">
-              <b class="post__author">Надежда</b> <span class="post__date">(45 часов назад)</span>
-              <p class="post__description">
-                Всем GM и взаимные лайки!
-              </p>
-              <span class="post__likes">Нравится: 2560</span>
-            </div>
-          </article>
-        </li>
-      </ul>
-      <div class="photo-bottom">
-        <p class="photo__description">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-      </div>
-    </section>
-    <section class="photo-add">
-      <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
-      <div class="filter">
-        <ul class="filter-list">
-          <li class="filter-list__item filter-list__item--crop">
-            <img src="img/icon-editor-crop.svg" width="48" height="48">
+    </header>
+    <main class="page-main">
+      <div class="center">
+      <section class="photo">
+        <div class="photo__top">
+          <p class="photo__description">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+        </div>
+        <ul class="photo-list center">
+          <li class="photo-list__item photo-list__item--main">
+            <article class="post-main">
+              <img class="post-main__photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+              <div class="post-main__about">
+                <b class="post-main__author">Анна</b> <span class="post-main__date">(5 минут назад)</span>
+                <p class="post-main__description">
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+                <span class="post-main__likes">Нравится: 215</span>
+              </div>
+            </article>
           </li>
-          <li class="filter-list__item filter-list--fill">
-            <img src="img/icon-editor-fill.svg" width="48" height="48">
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
+              <div class="post__about">
+                <b class="post__author">Левон</b> <span class="post__date">(5 часов назад)</span>
+                <p class="post__description">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <span class="post__likes">Нравится: 356</span>
+              </div>
+            </article>
           </li>
-          <li class="filter-list__item filter-list--brightness">
-            <img src="img/icon-editor-contrast.svg" width="32" height="32">
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+              <div class="post__about">
+                <b class="post__author">Антон</b> <span class="post__date">(12 часов назад)</span>
+                <p class="post__description">
+                  Соседи будут рады!
+                </p>
+                <span class="post__likes">Нравится: 666</span>
+              </div>
+            </article>
+          </li>
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
+              <div class="post__about">
+                <b class="post__author">Борис</b> <span class="post__date">(20 часов назад)</span>
+                <p class="post__description">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <span class="post__likes">Нравится: 215</span>
+              </div>
+            </article>
+          </li>
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
+              <div class="post__about">
+                <b class="post__author">Сергей</b> <span class="post__date">(25 часов назад)</span>
+                <p class="post__description">
+                  Самая кубанская в мире!
+                </p>
+                <span class="post__likes">Нравится: 4</span>
+              </div>
+            </article>
+          </li>
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="От первого лица">
+              <div class="post__about">
+                <b class="post__author">Максим</b> <span class="post__date">(40 часов назад)</span>
+                <p class="post__description">
+                  Где снег-то?
+                </p>
+                <span class="post__likes">Нравится: 150</span>
+              </div>
+            </article>
+          </li>
+          <li class="photo-list__item">
+            <article class="post">
+              <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло">
+              <div class="post__about">
+                <b class="post__author">Надежда</b> <span class="post__date">(45 часов назад)</span>
+                <p class="post__description">
+                  Всем GM и взаимные лайки!
+                </p>
+                <span class="post__likes">Нравится: 2560</span>
+              </div>
+            </article>
           </li>
         </ul>
-        <div class="filter__range">
-          <img src="http://placehold.it/245x30">
+        <div class="photo-bottom">
+          <p class="photo__description">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
         </div>
+      </section>
       </div>
-      <div class="photo-add__actions">
-        <button class="actions__button post" type="button">Запостить</button>
-        <button class="actions__button deny" type="button">Отмена</button>
+      <div class="page-main__wrapper page-main__wrapper--photo-add">
+        <section class="photo-add center">
+          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+          <div class="photo-add__controls">
+          <div class="filter">
+            <ul class="filter-list">
+              <li class="filter-list__item filter-list__item--crop">
+                <img src="img/icon-editor-crop.svg" width="48" height="48">
+              </li>
+              <li class="filter-list__item filter-list__item--fill">
+                <img src="img/icon-editor-fill.svg" width="48" height="48">
+              </li>
+              <li class="filter-list__item filter-list__item--brightness">
+                <img src="img/icon-editor-contrast.svg" width="32" height="32">
+              </li>
+            </ul>
+          </div>
+          <div class="photo-add__actions">
+            <button class="photo-add__action post" type="button">Запостить</button>
+            <button class="photo-add__action deny" type="button">Отмена</button>
+          </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </main>
-  <footer class="page-footer">
+    </main>
+  <footer class="page-footer center">
     <div class="page-footer__upper">
-      <a class="page-footer-logo__link" href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+      <a class="page-footer__logo-link" href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
     </div>
     <div class="page-footer__middle">
       <ul class="social-list">
@@ -161,7 +168,7 @@
     </div>
     <div class="page-footer__bottom">
       <span class="developed-by">Разработано</span>
-      <a class="developed-by__link" href="#"><img src="img/htmlacademy.svg" width="37" height="24" alt="HTML Academy"></a>
+      <a class="developed-link" href="#"><img src="img/htmlacademy.svg" width="37" height="24" alt="HTML Academy"></a>
     </div>
   </footer>
 </body>

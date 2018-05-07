@@ -1,0 +1,54 @@
+.post-main__description {
+  .set-default-paragraph;
+}
+
+.post-main__likes {
+  .set-likes;
+}
+
+.post-main__date {
+  .set-date;
+}
+
+.post-main__author {
+  font-weight: @bold;
+  .set-default-paragraph;
+}
+
+.post-main__about {
+  width: 280px;
+  margin: 0 auto;
+  background-color: @lightgray;
+}
+
+.post-main__photo {
+  width: 1000px;
+}
+
+@media (min-width: @tablet-width) {
+  .post-main {
+    width: 660px;
+  }
+
+  .post-main__photo {
+    width: 100%;
+  }
+
+  .post-main__about {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-main {
+    width: @desktop-width;
+  }
+
+  .post-main__photo {
+    width: 100%;
+  }
+
+  .post-main__about {
+    width: 940px;
+  }
+}

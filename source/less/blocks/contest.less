@@ -2,10 +2,55 @@
   background-color: @navy;
 }
 
+.contest__about {
+  width: 280px;
+}
+
 .contest__title {
   .set-default-page-header;
 }
 
 .contest__description {
   .set-default-introduction;
+  text-align: center;
+}
+
+.contest__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .contest__about {
+    width: 500px;
+  }
+
+  .contest__description {
+    font-size: 18px;
+  }
+
+  .contest__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contest__footer {
+    order: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__about {
+    width: 765px;
+  }
+
+  .contest__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

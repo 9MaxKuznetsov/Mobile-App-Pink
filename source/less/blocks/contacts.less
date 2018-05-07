@@ -4,24 +4,64 @@
 
 .contacts__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.contact__option {
+.contacts__option {
   font-weight: @bold;
   font-size: 18px;
   line-height: auto;
   color: @navy;
+  margin: 0 auto;
 }
 
-.contact__value {
+.contacts__value {
   font-weight: @light;
   font-size: 24px;
   line-height: auto;
   color: @cherry;
   text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contacts__map {
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    order: 3;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: @desktop-width;
+  }
 }

@@ -1,13 +1,48 @@
 .feedback__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .feedback__author {
   line-height: 30px;
   .set-bold-title;
+  text-align: center;
 }
 
 .feedback__comment {
   line-height: 30px;
   .set-default-paragraph;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__author {
+    order: 2;
+    font-size: 18px;
+  }
+
+  .feedback__comment {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    width: @desktop-width;
+  }
+
+  .feedback__quote {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .feedback__author {
+    margin: 0 auto;
+  }
 }

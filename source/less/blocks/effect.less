@@ -1,0 +1,56 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    min-height: 430px;
+    display: block;
+  }
+
+  .effect__introduction {
+    width: 310px;
+  }
+
+  .effect__header {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: @bold;
+    width: 180px;
+  }
+
+  .effect__description {
+    .set-default-paragraph;
+  }
+
+  .effect__more-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @cherry;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    width: @desktop-width;
+  }
+
+  .effect__introduction {
+    width: 525px;
+  }
+
+  .effect__header {
+    width: inherit;
+    line-height: 30px;
+  }
+
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__more-link {
+    font-size: 18px;
+  }
+}

@@ -1,3 +1,39 @@
 .photo__description {
   .set-default-introduction;
+  text-align: center;
+}
+
+.photo {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: @tablet-width;
+  }
+
+  .photo__top {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: @desktop-width;
+  }
+
+  .photo__top {
+    margin: 0 auto;
+  }
+
+  .photo-list {
+    width: @desktop-width;
+  }
 }
