@@ -8,11 +8,6 @@
   margin-top: 116px;
 }
 
-.tariff__value {
-  width: 280px;
-  border: 1px solid #e5e5e5;
-}
-
 .tariff__name {
   border: 1px solid #e5e5e5;
   color: #ffffff;
@@ -32,7 +27,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 17px 0px 2px 0px;
+  padding: 17px 0 2px 0;
 }
 
 .tariff__option--hit {
@@ -61,6 +56,8 @@
 }
 
 .tariff__value {
+  width: 280px;
+  border: 1px solid #e5e5e5;
   line-height: 30px;
   text-transform: uppercase;
   .set-default-paragraph;
@@ -78,7 +75,7 @@
   .tariff {
     overflow: visible;
     width: @tablet-width;
-    margin: 0px 0px 0px 36px;
+    margin: 0 0 0 36px;
     padding-top: 92px;
     padding-bottom: 70px;
   }
@@ -87,6 +84,8 @@
     width: 152px;
     border: 2px solid #e5e5e5;
     border-top: none;
+    padding: 8px 0 7px 13px;
+    text-transform: none;
   }
 
   .tariff tr {
@@ -98,19 +97,14 @@
     width: 620px;
   }
 
-  .tariff__value {
-    padding: 8px 0px 7px 13px;
-    text-transform: none;
-  }
-
   .tariff__option {
     font-size: 16px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
   }
 
   .tariff__price {
     font-size: 18px;
-    padding: 0px 0px 8px 0px;
+    padding: 0 0 8px 0;
     margin-top: -4px;
   }
 
@@ -118,7 +112,7 @@
     width: 100px;
     border: none;
     border-right: 2px solid #e5e5e5;
-    padding: 4px 0px 0px 0px;
+    padding: 4px 0 0 0;
   }
 
   .tariff__name:first-of-type {
