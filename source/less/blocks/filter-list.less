@@ -23,3 +23,43 @@
   display: block;
   margin-top: 1px;
 }
+
+@media (min-width: @tablet-width) {
+  .filter-list {
+    width: 275px;
+    margin: 7px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-list__item {
+    width: 275px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 15px 5px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .filter-list__item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-list__item--crop {
+    padding: 0 0 0 0;
+  }
+
+  .filter-list__item--fill {
+    padding: 9px 0 0 0;
+  }
+
+  .filter-list__item--brightness {
+    padding: 1px 0 0 5px;
+  }
+
+  .filter-list__item--brightness img {
+    width: 16px;
+    height: 16px;
+  }
+}

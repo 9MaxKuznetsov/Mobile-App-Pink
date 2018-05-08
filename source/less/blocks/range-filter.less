@@ -5,6 +5,18 @@
   padding-bottom: 22px;
 }
 
+.range-filter--crop {
+  display: none;
+}
+
+.range-filter--fill {
+  display: none;
+}
+
+.range-filter--brightness {
+  display: none;
+}
+
 .range-filter__controls {
   position: relative;
   height: 30px;
@@ -36,4 +48,42 @@
   border: 2px solid @cherry;
   border-radius: 50%;
   background-color: @lightgray;
+}
+
+@media (min-width: @tablet-width) {
+  .range-filter {
+    width: 202px;
+    border: none;
+  }
+
+  .range-filter--main {
+    display: none;
+  }
+
+  .range-filter--crop {
+    display: block;
+    margin: 55px 0 0 28px;
+  }
+
+  .range-filter--crop .range-filter__toggle {
+    left: 147px;
+  }
+
+  .range-filter--fill {
+    display: block;
+    margin: -3px 0 0 28px;
+  }
+
+  .range-filter--fill .range-filter__toggle {
+    left: 25px;
+  }
+
+  .range-filter--brightness {
+    display: block;
+    margin: 0 0 0 31px;
+  }
+
+  .range-filter--brightness .range-filter__toggle {
+    left: 96px;
+  }
 }
