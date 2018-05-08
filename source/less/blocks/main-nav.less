@@ -7,6 +7,7 @@
 
 .main-nav__list {
   display: none;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,9 +17,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
+    width: 620px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px;
   }
 }

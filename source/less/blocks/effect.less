@@ -28,10 +28,11 @@
   }
 
   .effect__more-link {
+    width: 290px;
     font-size: 14px;
     line-height: 24px;
     color: @cherry;
-    text-decoration: underline;
+    border-bottom: 1px solid @cherry;
     display: block;
     margin-top: 10px;
   }
@@ -40,6 +41,7 @@
 @media (min-width: @desktop-width) {
   .effect {
     width: @desktop-width;
+    padding-bottom: 115px;
   }
 
   .effect__introduction {
@@ -49,14 +51,30 @@
   .effect__header {
     width: inherit;
     line-height: 30px;
+    font-size: 30px;
+    padding: 11px 0 0 46px;
+  }
+
+  .effect__header br {
+    display: none;
   }
 
   .effect__description {
     font-size: 18px;
     line-height: 30px;
+    width: 540px;
+    text-align: left;
+    margin: -5px 0 0 47px;
+  }
+
+  .effect__description br {
+    display: none;
   }
 
   .effect__more-link {
     font-size: 18px;
+    line-height: 22px;
+    display: block;
+    margin: 34px 0 0 47px;
   }
 }
