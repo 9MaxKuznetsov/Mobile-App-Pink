@@ -4,9 +4,14 @@
 }
 
 .post__about {
-  background-color: @lightgray;
   width: 280px;
   margin: 0 auto;
+  background-color: @lightgray;
+  margin-top: -6px;
+  padding: 18px 0 0 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .post__photo {
@@ -18,12 +23,23 @@
   .set-default-paragraph;
 }
 
+.post__info {
+  margin: 0;
+  padding: 0;
+}
+
 .post__description {
   .set-default-paragraph;
+  width: 250px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 9px;
 }
 
 .post__likes {
   .set-likes;
+  margin: 0;
+  padding: 0 0 20px 32px;
 }
 
 .post__date {

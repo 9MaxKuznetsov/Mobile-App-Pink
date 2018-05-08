@@ -3,6 +3,41 @@
   flex-direction: column;
 }
 
+.photo-add {
+  margin-top: -9px;
+  padding-bottom: 30px;
+}
+
+.photo-add img {
+  display: block;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.photo-add__action {
+  width: 280px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: @bold;
+  margin: 0 auto;
+  background-color: @lightgray;
+  border: 3px solid @cherry;
+  color: @cherry;
+  border-radius: 40px;
+  padding: 15px 0 15px 0;
+  margin-top: 1px;
+  margin-bottom: 12px;
+}
+
+.photo-add__action:first-of-type {
+  margin-top: 36px;
+}
+
+.photo-add__action--deny {
+  border-color: #dddfe0;
+  color: #dddfe0;
+}
+
 @media (min-width: @tablet-width) {
   .photo-add {
     display: flex;
