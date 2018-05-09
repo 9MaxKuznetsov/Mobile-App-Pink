@@ -1,6 +1,6 @@
 .range-filter {
   width: 240px;
-  margin: 21px 0 0 38px;
+  margin: 9px 0 0 38px;
   border-bottom: 1px solid #dddfe0;
   padding-bottom: 22px;
 }
@@ -62,7 +62,7 @@
 
   .range-filter--crop {
     display: block;
-    margin: 55px 0 0 28px;
+    margin: 55px 0 0 27px;
   }
 
   .range-filter--crop .range-filter__toggle {
@@ -71,19 +71,49 @@
 
   .range-filter--fill {
     display: block;
-    margin: -3px 0 0 28px;
+    margin: -4px 0 0 27px;
   }
 
   .range-filter--fill .range-filter__toggle {
-    left: 25px;
+    left: 24px;
   }
 
   .range-filter--brightness {
     display: block;
-    margin: 0 0 0 31px;
+    margin: 1px 0 0 21px;
   }
 
   .range-filter--brightness .range-filter__toggle {
     left: 96px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-filter {
+    width: 288px;
+  }
+
+  .range-filter--crop {
+    margin: 63px 0 0 34px;
+  }
+
+  .range-filter--crop .range-filter__toggle {
+    left: 71px;
+  }
+
+  .range-filter--fill {
+    margin: -4px 0 0 32px;
+  }
+
+  .range-filter--fill .range-filter__toggle {
+    left: 247px;
+  }
+
+  .range-filter--brightness {
+    margin: 1px 0 0 26px;
+  }
+
+  .range-filter--brightness .range-filter__toggle {
+    left: 160px;
   }
 }

@@ -56,3 +56,19 @@ body {
     margin: 0 auto;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .post-main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .full-width {
+    margin-left: calc(-100vw / 2 + 960px / 2);
+    margin-right: calc(-100vw / 2 + 960px / 2);
+  }
+
+  .post-main__photo img {
+    width: 100%;
+  }
+}

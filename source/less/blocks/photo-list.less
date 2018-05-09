@@ -28,14 +28,23 @@
 
 @media (min-width: @desktop-width) {
   .photo-list {
+    width: @desktop-width;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
+  .photo-list__item:not(.photo-list__item--main) {
+    margin: 0 0 53px 0;
+    padding: 0;
+  }
+
   .photo-list__item {
     margin: 0;
-    margin-bottom: 55px;
+  }
+
+  .photo-list__item--main {
+    width: @desktop-width;
   }
 }

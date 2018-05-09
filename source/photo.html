@@ -40,7 +40,9 @@
         <ul class="photo-list center">
           <li class="photo-list__item photo-list__item--main">
             <article class="post-main">
-              <a class="post-main__photo" href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама"></a>
+              <div class="full-width">
+                <a class="post-main__photo" href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама"></a>
+              </div>
               <div class="post-main__about">
                 <span class="post-main__info"><b class="post-main__author">Анна </b> <span class="post-main__date">(5 минут назад)</span></span>
                 <p class="post-main__description">
@@ -137,35 +139,35 @@
           <div class="filter">
             <ul class="filter-list">
               <li class="filter-list__item filter-list__item--crop">
-                <img src="img/icon-editor-crop.svg" width="48" height="48">
+                <button class="filter-list__switch filter-list__switch--crop"></button>
                 <div class="range-filter range-filter--crop">
                   <div class="range-filter__controls">
                     <div class="range-filter__scale">
                       <div class="range-filter__bar"></div>
                     </div>
-                    <div class="range-filter__toggle"></div>
+                    <button class="range-filter__toggle"></button>
                   </div>
                 </div>
               </li>
               <li class="filter-list__item filter-list__item--fill">
-                <img src="img/icon-editor-fill.svg" width="48" height="48">
+                <button class="filter-list__switch filter-list__switch--fill"></button>
                 <div class="range-filter range-filter--fill">
                   <div class="range-filter__controls">
                     <div class="range-filter__scale">
                       <div class="range-filter__bar"></div>
                     </div>
-                    <div class="range-filter__toggle"></div>
+                    <button class="range-filter__toggle"></button>
                   </div>
                 </div>
               </li>
               <li class="filter-list__item filter-list__item--brightness">
-                <img src="img/icon-editor-contrast.svg" width="32" height="32">
+                <button class="filter-list__switch filter-list__switch--brightness"></button>
                 <div class="range-filter range-filter--brightness">
                   <div class="range-filter__controls">
                     <div class="range-filter__scale">
                       <div class="range-filter__bar"></div>
                     </div>
-                    <div class="range-filter__toggle"></div>
+                    <button class="range-filter__toggle"></button>
                   </div>
                 </div>
               </li>
@@ -176,7 +178,7 @@
               <div class="range-filter__scale">
                 <div class="range-filter__bar"></div>
               </div>
-              <div class="range-filter__toggle"></div>
+              <button class="range-filter__toggle"></button>
             </div>
           </div>
           <div class="photo-add__actions">
