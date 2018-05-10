@@ -3,8 +3,19 @@
   flex-direction: column;
 }
 
-.describe label {
+.describe textarea {
+  width: 280px;
+  height: 200px;
   margin: 0 auto;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+.describe textarea::placeholder {
+  color: @navy;
+  padding: 12px 0 0 16px;
 }
 
 @media (min-width: @tablet-width) {

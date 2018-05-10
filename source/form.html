@@ -44,7 +44,7 @@
           </li>
           <li class="form__item form__item--full-name">
             <label class="form__title" for="first-name">Имя:</label>
-            <input class="form__text-input" name="first-name" type="text" id="first-name" placeholder="Укажите имя *" />
+            <input class="form__text-input" name="first-name" type="text" id="first-name" placeholder="Введите ваше имя *" />
           </li>
           <li class="form__item form__item--full-name">
             <label class="form__title" for="patronymic">Отчество:</label>
@@ -52,30 +52,30 @@
           </li>
         </ul>
         <div class="form__group form__group--achievements center">
-          <h3 class="form__header">Ваши безбашенные достижения в путешествии</h3>
+          <h3 class="form__header form__header--achievements">Ваши безбашенные достижения в путешествии</h3>
           <ul class="achievements-list">
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="selfie" type="checkbox" id="achievements__selfie" checked/>
+              <input class="visually-hidden form__checkbox" name="selfie" type="checkbox" id="achievements__selfie" checked/>
               <label class="form__label" for="achievements__selfie">Сделал селфи с акулой</label>
             </li>
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="scorched" type="checkbox" id="achievements__scorched" checked/>
+              <input class="visually-hidden form__checkbox" name="scorched" type="checkbox" id="achievements__scorched" checked/>
               <label class="form__label" for="achievements__scorched">Обгорел на пляже</label>
             </li>
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="chuck" type="checkbox" id="achievements__chuck" />
+              <input class="visually-hidden form__checkbox" name="chuck" type="checkbox" id="achievements__chuck" />
               <label class="form__label" for="achievements__chuck">Видел Чака Норриса</label>
             </li>
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="souvenirs" type="checkbox" id="achievements__souvenirs" />
+              <input class="visually-hidden form__checkbox" name="souvenirs" type="checkbox" id="achievements__souvenirs" />
               <label class="form__label" for="achievements__souvenirs">Накупил сувениров</label>
             </li>
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="tower-held" type="checkbox" id="achievements__tower-held" checked/>
+              <input class="visually-hidden form__checkbox" name="tower-held" type="checkbox" id="achievements__tower-held" checked/>
               <label class="form__label" for="achievements__tower-held">Удержал башню</label>
             </li>
             <li class="achievements-list__item">
-              <input class="form__checkbox" name="hotel-crushed" type="checkbox" id="achievements__hotel-crushed" />
+              <input class="visually-hidden form__checkbox" name="hotel-crushed" type="checkbox" id="achievements__hotel-crushed" />
               <label class="form__label" for="achievements__hotel-crushed">Разгромил отель</label>
             </li>
           </ul>
@@ -94,29 +94,29 @@
           </ul>
         </div>
         <div class="form__group form__group--application center">
-          <h3 class="form__header">С каким приложением путешествовали?</h3>
+          <h3 class="form__header form__header--application">С каким приложением путешествовали?</h3>
           <ul class="application-list">
             <li class="application-list__item">
-              <input class="form__radio" name="os" value="ios" type="radio" id="application__ios" checked/>
+              <input class="visually-hidden form__radio" name="os" value="ios" type="radio" id="application__ios" checked/>
               <label class="form__label" for="application__ios">Pink для iOS</label>
             </li>
             <li class="application-list__item">
-              <input class="form__radio" name="os" value="android" type="radio" id="application__android" />
-              <label class="form__label" for="application__android">Pink для Android</label>
+              <input class="visually-hidden form__radio" name="os" value="android" type="radio" id="application__android" />
+              <label class="form__label" for="application__android">Pink на Android</label>
             </li>
             <li class="application-list__item">
-              <input class="form__radio" name="os" value="windows" type="radio" id="application__windows" />
+              <input class="visually-hidden form__radio" name="os" value="windows" type="radio" id="application__windows" />
               <label class="form__label" for="application__windows">Windows Phone</label>
             </li>
           </ul>
         </div>
         <div class="describe center">
-          <label class="form__title" for="describe__text">Опишите свои эмоции</label>
+          <label class="form__title form__title--describe" for="describe__text">Опишите свои эмоции</label>
           <textarea id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
         </div>
         <div class="contest__footer center">
-          <button class="button button--submit" type="submit">Отправить форму</button>
-          <span class="required">* — обязательные поля</span>
+          <button class="contest__submit" type="submit">Отправить форму</button>
+          <span class="contest__required"><span class="contest__required-star">*</span> — обязательные поля</span>
         </div>
       </form>
     </section>
