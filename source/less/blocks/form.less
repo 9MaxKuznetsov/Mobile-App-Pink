@@ -96,10 +96,6 @@
   border-radius: 3px;
 }
 
-.form__item--contacts {
-  margin-bottom: 17px;
-}
-
 .form__list--contacts {
   margin-bottom: 25px;
 }
@@ -204,14 +200,19 @@
 
   .form__list--contacts {
     border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 45px 0 27px 0;
   }
 
   .form__item--contacts {
     display: flex;
     flex-direction: column;
-    padding: 45px 0 0 0;
+    padding: 0 0 0 0;
     border-radius: 3px;
-    margin-bottom: 28px;
+  }
+
+  .form__item--contacts:not(:first-of-type) {
+    margin-top: 29px;
   }
 
   .form__item--contacts input {
@@ -281,6 +282,13 @@
 
   .form__title--describe {
     position: absolute;
+    text-align: center;
+    width: 260px;
+    left: 177px;
+    top: -16px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
   }
 }
 
