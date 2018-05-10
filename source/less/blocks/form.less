@@ -153,10 +153,12 @@
   }
 
   .form__item--full-name {
+    width: 620px;
     display: flex;
     flex-basis: @tablet-width;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 52px;
   }
 
   .form__item--full-name input {
@@ -164,23 +166,40 @@
   }
 
   .form__item--full-name label {
-    padding-right: 20px;
+    padding-right: 19px;
   }
 
   .form__list--full-name {
+    width: 620px;
     order: 1;
+    margin: 0 auto;
+    margin-top: 53px;
+  }
+
+  .form__title {
+    padding: 18px 0 0 0;
+    width: auto;
   }
 
   .form__group--application {
+    position: relative;
     order: 2;
+    width: 620px;
   }
 
   .form__group--achievements {
+    position: relative;
     order: 4;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__header--contacts {
     display: block;
+    left: 180px;
+    top: 8px;
+    width: 259px;
+    background-color: white;
   }
 
   .form__list--contacts {
@@ -190,6 +209,9 @@
   .form__item--contacts {
     display: flex;
     flex-direction: column;
+    padding: 45px 0 0 0;
+    border-radius: 3px;
+    margin-bottom: 28px;
   }
 
   .form__item--contacts input {
@@ -200,6 +222,65 @@
 
   .form__item--contacts label {
     order: 2;
+  }
+
+  .form__header {
+    position: absolute;
+  }
+
+  .form__radio + .form__label::before {
+    left: -60px;
+    top: -4px;
+  }
+
+  .form__radio:checked + .form__label::after {
+    left: -48px;
+    top: 8px;
+  }
+
+  .form__header--application {
+    left: 125px;
+    top: -32px;
+    width: 370px;
+    background-color: white;
+  }
+
+  .form__title--contacts {
+    position: relative;
+    padding: 10px 0 0 77px;
+  }
+
+  .form__title--contacts::before {
+    content: "";
+    position: absolute;
+    left: 496px;
+    top: -62px;
+    width: 62px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+
+  .form__checkbox + .form__label::before {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__checkbox:checked + .form__label::after {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__header--achievements {
+    left: 92px;
+    top: -7px;
+    width: 436px;
+    background-color: white;
+  }
+
+  .form__title--describe {
+    position: absolute;
   }
 }
 

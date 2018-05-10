@@ -33,7 +33,7 @@
     <section class="contest__application center">
       <div class="contest__about center">
         <p class="contest__description">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__description-add">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
       <form class="contest__form form" action="https://echo.htmlacademy.ru" method="get">
@@ -84,11 +84,11 @@
           <h3 class="form__header form__header--contacts">Контактная информация</h3>
           <ul class="form__list form__list--contacts">
             <li class="form__item form__item--contacts">
-              <label class="form__title" for="contacts__phone-number">Номер телефона</label>
+              <label class="form__title form__title--contacts" for="contacts__phone-number">Номер телефона</label>
               <input class="form__text-input" name="phone-number" type="text" id="contacts__phone-number" placeholder="Номер, пожалуйста" />
             </li>
             <li class="form__item form__item--contacts">
-              <label class="form__title" for="contacts__e-mail">Адрес почты</label>
+              <label class="form__title form__title--contacts" for="contacts__e-mail">Адрес почты</label>
               <input class="form__text-input" name="e-mail" type="text" id="contacts__e-mail" placeholder="Введите почту *" />
             </li>
           </ul>
@@ -112,7 +112,7 @@
         </div>
         <div class="describe center">
           <label class="form__title form__title--describe" for="describe__text">Опишите свои эмоции</label>
-          <textarea id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          <textarea class="desribe__field" id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
         </div>
         <div class="contest__footer center">
           <button class="contest__submit" type="submit">Отправить форму</button>
