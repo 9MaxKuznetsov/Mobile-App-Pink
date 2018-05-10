@@ -295,13 +295,91 @@
 @media (min-width: @desktop-width) {
   .form__list--full-name {
     width: 436px;
-    margin: 0;
+    margin: 66px 0 0 -22px;
     padding: 0;
+  }
+
+  .form__item--full-name {
+    width: 436px;
+    margin-bottom: 53px;
+    padding: 0;
+  }
+
+  .form__header--application {
+    left: 55px;
+    top: -31px;
+  }
+
+  .form__list--contacts {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 13px;
+    padding: 0 0 13px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .form__item--contacts {
+    width: 373px;
+    margin: 42px 0 0 21px;
+    padding: 0;
+  }
+
+  .form__item--contacts:not(:first-of-type) {
+    margin: 42px 24px 0 0;
+    padding: 0;
+  }
+
+  .form__item--contacts input {
+    width: 376px;
+  }
+
+  .form__title--contacts {
+    padding: 10px 0 0 20px;
+  }
+
+  .form__title--contacts::before {
+    content: "";
+    position: absolute;
+    left: 313px;
+    top: -62px;
+    width: 62px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+
+  .form__header--contacts {
+    left: 350px;
+    top: 5px;
+  }
+
+  .form__group--achievements {
+    margin-top: 65px;
+    width: 940px;
+  }
+
+  .form__header--achievements {
+    left: 251px;
+    top: -46px;
   }
 
   .form__group--application {
     width: 436px;
-    margin: 0;
-    padding: 0;
+    margin: 46px 0 0 -20px;
+    padding: 0 20px 0 0;
+  }
+
+  .form__radio + .form__label::before {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__radio:checked + .form__label::after {
+    left: -47px;
+    top: 8px;
   }
 }
