@@ -8,31 +8,30 @@
 </head>
 
 <body>
-    <header class="page-header page-header--hand">
-      <div class="page-header__wrapper">
-        <nav class="main-nav center">
-          <div class="main-nav__header">
-            <a class="page-logo-link">
+  <header class="index-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav center">
+        <div class="main-nav__header">
+          <div class="site-list-actions">
+            <a class="site-list-actions__logo-link" href="index.html">
               <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
             </a>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--actions">
-                <a class="page-logo-link" href="index.html">
-                  <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
-                </a>
-                <a class="site-list__close" href="#">
-                  <image src="img/icon-menu-cross.svg" width="24" height="23">
-                </a>
-              </li>
-              <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Главная</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
-            </ul>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <a class="site-list-actions__close" href="#">
+              <image src="img/icon-menu-cross.svg" width="24" height="23">
+            </a>
           </div>
-        </nav>
-      </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-header page-header--hand">
       <div class="center">
         <section class="app">
           <div class="page-header__introduction center">
@@ -49,8 +48,7 @@
           </div>
         </section>
       </div>
-    </header>
-  <main class="page-main">
+    </div>
     <section class="advantages">
       <div class="advantages__header center">
         <h2 class="advantages__main-title center">Устали от серости мегаполиса?</h2>
@@ -128,9 +126,15 @@
         <table class="tariff__list tariff__list--index">
           <tr>
             <td class="tariff__blank-space"></td>
-            <th class="tariff__name"><div class="tariff__type"><span class="tariff__option">База</span><span class="tariff__price">1,99 USD</span></div></th>
-            <th class="tariff__name"><div class="tariff__type"><span class="tariff__option tariff__option--hit">Стандарт</span><span class="tariff__price">3,99 USD</span></div></th>
-            <th class="tariff__name"><div class="tariff__type"><span class="tariff__option">Анлим</span><span class="tariff__price">9,99 USD</span></div></th>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option">База</span><span class="tariff__price">1,99 USD</span></div>
+            </th>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option tariff__option--hit">Стандарт</span><span class="tariff__price">3,99 USD</span></div>
+            </th>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option">Анлим</span><span class="tariff__price">9,99 USD</span></div>
+            </th>
           </tr>
           <tr>
             <td class="tariff__value">Розовый фильтр</td>

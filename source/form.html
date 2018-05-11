@@ -12,24 +12,20 @@
     <div class="page-header__wrapper">
       <nav class="main-nav center">
         <div class="main-nav__header">
-          <a class="page-logo-link" href="index.html">
-            <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
-          </a>
+          <div class="site-list-actions">
+            <a class="site-list-actions__logo-link" href="index.html">
+              <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
+            </a>
+            <a class="site-list-actions__close" href="#">
+              <image src="img/icon-menu-cross.svg" width="24" height="23">
+            </a>
+          </div>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--actions">
-              <a class="page-logo-link" href="index.html">
-                <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </a>
-              <a class="site-list__close" href="#">
-                <image src="img/icon-menu-cross.svg" width="24" height="23">
-              </a>
-            </li>
             <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
             <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Конкурс</a></li>
             <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
       </nav>
     </div>
@@ -122,7 +118,7 @@
         </div>
         <div class="contest__footer center">
           <button class="contest__submit" type="submit">Отправить форму</button>
-          <span class="contest__required"><span class="contest__required-star">*</span> — обязательные поля</span>
+          <span class="contest__required"><span class="contest__required-star">*</span> — обязательные <span class="contest__required-more">для заполнения</span> поля</span>
         </div>
       </form>
     </section>

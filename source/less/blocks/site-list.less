@@ -1,12 +1,11 @@
 .site-list {
   width: 320px;
-  position: absolute;
   list-style: none;
   color: #ffffff;
   display: block;
   background-color: @navy;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .site-list__item-link {
@@ -18,48 +17,64 @@
   text-decoration: none;
 }
 
-.site-list__close {
-  padding: 18px 19px 0 0;
-}
-
-.site-list__item--actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-}
-
 .site-list__item--actions .page-logo-link {
   margin-left: 20px;
   padding: 19px 0 20px 0;
 }
 
-.site-list__item:not(:first-of-type) {
+.site-list__item {
   text-align: center;
   border-bottom: 1px solid black;
   border-top: 1px solid #485461;
   padding: 15px 0 15px 0;
 }
 
-@media (min-width: @desktop-width) {
+.site-list-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list-actions__logo-link {
+  padding: 15px 0 20px 20px;
+}
+
+.site-list-actions__close {
+  padding: 15px 19px 0 0;
+}
+
+@media (min-width: @tablet-width) {
   .site-list {
-    position: relative;
-    padding: 17px 0 0 0;
-    background-color: rgba(0, 0, 0, 0);
+    width: @tablet-width;
   }
 
-  .site-list__item {
-    padding-top: 29px;
-    border: none;
+  .site-list-actions {
+    width: @tablet-width;
+    padding: 7px 0 17px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 626px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
   }
 
   .site-list__item:not(:first-of-type) {
     border: none;
-    padding-top: 29px;
+    padding-top: 0;
+    margin-left: 80px;
   }
 
-  .site-list__item--actions {
-    display: none;
+  .site-list__item {
+    border: none;
+    padding-top: 0;
   }
 
   .site-list__item-link {
@@ -68,5 +83,17 @@
     line-height: 18px;
     text-transform: none;
     display: block;
+  }
+
+  .site-list-actions__close {
+    display: none;
+  }
+
+  .site-list-actions {
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    padding-right: 60px;
+    border: none;
   }
 }
