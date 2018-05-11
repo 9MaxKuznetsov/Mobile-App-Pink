@@ -1,7 +1,9 @@
 .page-header {
-  min-height: 237px;
+  min-height: 170px;
   width: 100%;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat @navy center 0;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat @navy center -67px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header--hand {
@@ -18,6 +20,7 @@
   .set-default-page-header;
   padding-top: 15px;
   line-height: 30px;
+  margin-top: 14px;
 }
 
 .page-header__index-title {
@@ -38,14 +41,14 @@
   width: 230px;
 }
 
-.page-header__wrapper {
+.page-header-wrapper {
   background-color: @navy;
   width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    min-height: 440px;
+    min-height: 329px;
   }
 
   .page-header--hand {
@@ -81,9 +84,10 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-height: 395px;
+    margin-top: -110px;
   }
 
-  .page-header__wrapper {
+  .page-header-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
     position: relative;
@@ -106,6 +110,10 @@
   }
 
   .page-header__main-title {
-    margin: 50px 0 0 0;
+    margin: 158px 0 0 0;
+  }
+
+  .page-header--contest {
+    margin-top: -111px;
   }
 }

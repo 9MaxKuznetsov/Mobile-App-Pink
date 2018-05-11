@@ -8,32 +8,33 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav center">
-        <div class="main-nav__header">
-          <div class="site-list-actions">
-            <a class="site-list-actions__logo-link" href="index.html">
-              <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
-            </a>
-            <a class="site-list-actions__close" href="#">
-              <image src="img/icon-menu-cross.svg" width="24" height="23">
-            </a>
-          </div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
+  <header class="page-header-wrapper">
+    <nav class="main-nav center">
+      <div class="main-nav__header">
+        <div class="site-list-actions">
+          <a class="site-list-actions__logo-link" href="index.html">
+            <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
+          </a>
+          <a class="site-list-actions__close" href="#">
+            <image src="img/icon-menu-cross.svg" width="24" height="23">
+          </a>
         </div>
-      </nav>
-    </div>
-    <div class="page-header__introduction page-header__introduction--contest center">
-      <h1 class="page-header__main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
     </div>
   </header>
   <main class="page-main contest">
+    <div class="page-header page-header--contest">
+      <div class="page-header__introduction page-header__introduction--contest center">
+        <h1 class="page-header__main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </div>
     <section class="contest__application center">
       <div class="contest__about center">
         <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__description-add">Пожалуйста, заполните форму ниже:</span></p>
@@ -82,7 +83,7 @@
             </li>
           </ul>
         </div>
-        <div class="contacts center">
+        <div class="pm-us center">
           <h3 class="form__header form__header--contacts">Контактная информация</h3>
           <ul class="form__list form__list--contacts">
             <li class="form__item form__item--contacts">
