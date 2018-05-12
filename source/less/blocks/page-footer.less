@@ -4,18 +4,40 @@
   align-items: center;
 }
 
+.page-footer__upper {
+  margin-top: 40px;
+}
+
+.page-footer__middle {
+  margin-top: 33px;
+}
+
+.page-footer__bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0;
+    min-height: 127px;
+  }
+
+  .page-footer__upper {
+    margin: 39px 0 0 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
+    width: 940px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }

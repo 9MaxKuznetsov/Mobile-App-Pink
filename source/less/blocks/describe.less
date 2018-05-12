@@ -3,18 +3,50 @@
   flex-direction: column;
 }
 
-.describe label {
+.describe textarea {
+  width: 280px;
+  height: 200px;
   margin: 0 auto;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+.describe textarea::placeholder {
+  color: @navy;
+  padding: 12px 0 0 16px;
 }
 
 @media (min-width: @tablet-width) {
   .describe {
+    position: relative;
+    width: 620px;
     order: 5;
     border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    margin-top: 49px;
+    padding-bottom: 51px;
   }
 
   .describe textarea {
     width: 500px;
+    height: 193px;
     margin: 0 auto;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .describe {
+    width: 940px;
+    margin: 65px 0 0 0;
+    padding-bottom: 43px;
+  }
+
+  .describe textarea {
+    margin-top: 42px;
+    width: 820px;
+    height: 128px;
   }
 }

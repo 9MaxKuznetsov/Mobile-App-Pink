@@ -5,28 +5,33 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
 </head>
 
 <body>
-    <header class="page-header page-header--hand">
-      <div class="page-header__wrapper">
-        <nav class="main-nav center">
-          <div class="main-nav__header">
-            <a class="page-logo-link">
+    <header  class="page-header-wrapper">
+      <nav class="main-nav center">
+        <div class="main-nav__header">
+          <div class="site-list-actions">
+            <a class="site-list-actions__logo-link" href="index.html">
               <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
             </a>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Главная</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
-            </ul>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <a class="site-list-actions__close" href="#">
+              <image src="img/icon-menu-cross.svg" width="24" height="23">
+            </a>
           </div>
-        </nav>
-      </div>
-      <div class="center">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page-main">
+    <div class="page-header page-header--hand">
+      <div class="center center--flex">
+        <img class="app__phone-image" src="img/iphone-hand-mobile@1x.png" width="270" height="315"/>
         <section class="app">
           <div class="page-header__introduction center">
             <h1 class="page-header__index-title">Взгляните на жизнь иначе!</h1>
@@ -42,12 +47,11 @@
           </div>
         </section>
       </div>
-    </header>
-  <main class="page-main">
+    </div>
     <section class="advantages">
       <div class="advantages__header center">
-        <h2 class="advantages__main-title title center">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__main-title title center">Нам есть, что вам предложить!</h2>
+        <h2 class="advantages__main-title center">Устали от серости мегаполиса?</h2>
+        <h2 class="advantages__main-title advantages__main-title--center center">Нам есть, что вам предложить!</h2>
       </div>
       <div class="advantages__wrapper">
         <div class="advantages__introduction center">
@@ -67,7 +71,7 @@
               </li>
             </ul>
           </div>
-          <div class="advantages__footer">
+          <div class="advantages__footer center">
             <img src="../img/iphone-screen-mobile@1x.png" width="157" height="330">
           </div>
         </div>
@@ -76,9 +80,9 @@
     <div class="page-main__wrapper page-main__wrapper--effect">
       <section class="effect center">
         <div class="effect__introduction">
-          <h3 class="effect__header">Эффект на 24 часа!</h3>
+          <h3 class="effect__header">Эффект <br />на 24 часа!</h3>
           <p class="effect__description">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            Британские ученые провели исследования и доказали, что положительный эффект <br />от использования приложения длится целые сутки!
           </p>
           <a class="effect__more-link">Узнать больше об исследовании</a>
         </div>
@@ -92,18 +96,21 @@
             <p class="feedback__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
+            <span class="feedback__author-about">25 лет, водитель трамвая</span>
           </li>
-          <li class="feedback__quote">
+          <li class="feedback__quote visually-hidden">
             <h3 class="feedback__author">Николай Петров</h3>
             <p class="feedback__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
+            <span class="feedback__author-about">25 лет, водитель трамвая</span>
           </li>
-          <li class="feedback__quote">
+          <li class="feedback__quote visually-hidden">
             <h3 class="feedback__author">Николай Петров</h3>
             <p class="feedback__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
+            <span class="feedback__author-about">25 лет, водитель трамвая</span>
           </li>
         </ul>
         <p class="feedback__toggles toggles">
@@ -117,27 +124,33 @@
       <section class="tariff center">
         <table class="tariff__list tariff__list--index">
           <tr>
-            <td></td>
-            <th class="tariff__name"><span class="tariff__option">База</span><br /><span class="tariff__price">1,99 USD</span></th>
-            <th class="tariff__name"><span class="tariff__option">Стандарт</span><br /><span class="tariff__price">3,99 USD</span></th>
-            <th class="tariff__name"><span class="tariff__option">Анлим</span><br /><span class="tariff__price">9,99 USD</span></th>
+            <td class="tariff__blank-space"></td>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option">База</span><span class="tariff__price">1,99 USD</span></div>
+            </th>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option tariff__option--hit">Стандарт</span><span class="tariff__price">3,99 USD</span></div>
+            </th>
+            <th class="tariff__name">
+              <div class="tariff__type"><span class="tariff__option">Анлим</span><span class="tariff__price">9,99 USD</span></div>
+            </th>
           </tr>
           <tr>
             <td class="tariff__value">Розовый фильтр</td>
             <td class="tariff__value"></td>
-            <td class="tariff__value"></td>
+            <td class="tariff__value tariff__value--index-filter"><span class="filters">Розовый фильтр</span></td>
             <td class="tariff__value"></td>
           </tr>
           <tr>
             <td class="tariff__value">Смайлики</td>
             <td class="tariff__value"></td>
-            <td class="tariff__value"></td>
+            <td class="tariff__value tariff__value--index-smile"><span class="smiles">Смайлики</span></td>
             <td class="tariff__value"></td>
           </tr>
           <tr>
             <td class="tariff__value">Комментарии</td>
             <td class="tariff__value"></td>
-            <td class="tariff__value"></td>
+            <td class="tariff__value tariff__value--index-comment"><span class="comments">Комментарии</span></td>
             <td class="tariff__value"></td>
           </tr>
         </table>
@@ -150,11 +163,11 @@
     </div>
     <section class="contacts center">
       <div clas="contacts__header">
-        <h3 class="contacts__title title">Остались вопросы? Свяжитесь с нами!</h3>
+        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
         <ul class="contacts__list">
-          <li class="contacts__item"><span class="contacts__option">Звоните:</span><a class="contacts__value" href="#">+7 (812) 555-66-66</a></li>
-          <li class="contacts__item"><span class="contacts__option">Пишите:</span><a class="contacts__value" href="#">mail@htmlacademy.ru</a></li>
-          <li class="contacts__item"><span class="contacts__option">Приезжайте в гости:</span><a class="contacts__value" href="#">ул. Большая Конюшенная, 19/8</a></li>
+          <li class="contacts__item contacts__item--call"><span class="contacts__option">Звоните:</span><a class="contacts__value" href="#">+7 (812) 555-66-66</a></li>
+          <li class="contacts__item contacts__item--write"><span class="contacts__option">Пишите:</span><a class="contacts__value" href="#">mail@htmlacademy.ru</a></li>
+          <li class="contacts__item contacts__item--visit"><span class="contacts__option">Приезжайте в гости:</span><a class="contacts__value" href="#">ул. Большая Конюшенная, 19/8</a></li>
         </ul>
       </div>
       <div class="contacts__map">

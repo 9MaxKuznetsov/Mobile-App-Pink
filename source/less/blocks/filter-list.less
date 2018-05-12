@@ -1,6 +1,144 @@
 .filter-list {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 210px;
+}
+
+.filter-list__item {
+  width: 50px;
+}
+
+.filter-list__item--brightness img {
+  display: block;
+  margin-top: 7px;
+}
+
+.filter-list__item--fill img {
+  display: block;
+  margin-top: 1px;
+}
+
+.filter-list__switch {
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.filter-list__switch--crop {
+  background: url("../img/icon-editor-crop.svg") no-repeat;
+  margin-top: 20px;
+}
+
+.filter-list__switch--fill {
+  background: url("../img/icon-editor-fill.svg") no-repeat;
+  margin-top: 22px;
+}
+
+.filter-list__switch--brightness {
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  margin: 28px 0 0 8px;
+}
+
+.filter-list__switch img {
+  height: 24px;
+  width: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-list {
+    width: 275px;
+    margin: 7px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-list__item {
+    width: 275px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .filter-list__item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-list__item--crop {
+    padding: 0 0 0 0;
+  }
+
+  .filter-list__item--fill {
+    padding: 9px 0 0 0;
+  }
+
+  .filter-list__item--brightness {
+    padding: 1px 0 0 5px;
+  }
+
+  .filter-list__item--brightness img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .filter-list__switch {
+    width: 25px;
+    height: 25px;
+  }
+
+  .filter-list__switch--crop {
+    background-size: 24px;
+    margin: 58px 0 0 3px;
+  }
+
+  .filter-list__switch--fill {
+    background-size: 24px;
+    margin: 1px 0 0 5px;
+  }
+
+  .filter-list__switch--brightness {
+    background-size: 16px;
+    margin: 8px 0 0 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-list {
+    width: 410px;
+    margin: 0 0 0 28px;
+  }
+
+  .filter-list__item {
+    width: 100%;
+  }
+
+  .filter-list__switch {
+    width: 60px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter-list__switch--crop {
+    background-size: 48px;
+    margin: 54px 0 0 0;
+  }
+
+  .filter-list__switch--fill {
+    background-size: 48px;
+    margin: -11px 0 0 2px;
+  }
+
+  .filter-list__switch--brightness {
+    background-size: 32px;
+    margin: 0 0 0 3px;
+  }
 }

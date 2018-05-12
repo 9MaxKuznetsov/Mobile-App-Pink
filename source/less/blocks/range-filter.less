@@ -1,0 +1,119 @@
+.range-filter {
+  width: 240px;
+  margin: 9px 0 0 38px;
+  border-bottom: 1px solid #dddfe0;
+  padding-bottom: 22px;
+}
+
+.range-filter--crop {
+  display: none;
+}
+
+.range-filter--fill {
+  display: none;
+}
+
+.range-filter--brightness {
+  display: none;
+}
+
+.range-filter__controls {
+  position: relative;
+  height: 30px;
+  padding-top: 14px;
+}
+
+.range-filter__controls .range-filter__scale {
+  height: 2px;
+  background: @navy;
+}
+
+.range-filter__controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+}
+
+.range-filter__toggle {
+  position: absolute;
+  top: 8px;
+  left: 193px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+
+  border: 2px solid @cherry;
+  border-radius: 50%;
+  background-color: @lightgray;
+}
+
+@media (min-width: @tablet-width) {
+  .range-filter {
+    width: 202px;
+    border: none;
+  }
+
+  .range-filter--main {
+    display: none;
+  }
+
+  .range-filter--crop {
+    display: block;
+    margin: 55px 0 0 27px;
+  }
+
+  .range-filter--crop .range-filter__toggle {
+    left: 147px;
+  }
+
+  .range-filter--fill {
+    display: block;
+    margin: -4px 0 0 27px;
+  }
+
+  .range-filter--fill .range-filter__toggle {
+    left: 24px;
+  }
+
+  .range-filter--brightness {
+    display: block;
+    margin: 1px 0 0 21px;
+  }
+
+  .range-filter--brightness .range-filter__toggle {
+    left: 96px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-filter {
+    width: 288px;
+  }
+
+  .range-filter--crop {
+    margin: 63px 0 0 34px;
+  }
+
+  .range-filter--crop .range-filter__toggle {
+    left: 71px;
+  }
+
+  .range-filter--fill {
+    margin: -4px 0 0 32px;
+  }
+
+  .range-filter--fill .range-filter__toggle {
+    left: 247px;
+  }
+
+  .range-filter--brightness {
+    margin: 1px 0 0 26px;
+  }
+
+  .range-filter--brightness .range-filter__toggle {
+    left: 160px;
+  }
+}

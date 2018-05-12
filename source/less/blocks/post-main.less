@@ -1,9 +1,13 @@
 .post-main__description {
   .set-default-paragraph;
+  margin: 0 auto;
+  line-height: 24px;
+  padding: 0 0 9px 18px;
 }
 
 .post-main__likes {
   .set-likes;
+  padding: 0 0 19px 50px;
 }
 
 .post-main__date {
@@ -15,10 +19,22 @@
   .set-default-paragraph;
 }
 
+.post-main {
+  font-size: 0;
+}
+
 .post-main__about {
   width: 280px;
   margin: 0 auto;
   background-color: @lightgray;
+  padding-top: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.post-main__info {
+  padding-left: 18px;
 }
 
 .post-main__photo {
@@ -27,28 +43,74 @@
 
 @media (min-width: @tablet-width) {
   .post-main {
-    width: 660px;
-  }
-
-  .post-main__photo {
-    width: 100%;
+    width: @tablet-width;
+    margin: 0 0 30px 0;
+    padding: 0;
   }
 
   .post-main__about {
     width: 620px;
+    margin: 0 auto;
+    padding: 26px 0 15px 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post-main__info {
+    width: 250px;
+    order: 1;
+  }
+
+  .post-main__likes {
+    width: 150px;
+    order: 2;
+    padding: 0 0 0 2px;
+  }
+
+  .post-main__description {
+    width: 570px;
+    order: 3;
+    margin: 0;
+  }
+
+  .post-main__photo img {
+    width: 660px;
+    height: 509px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-main__photo a {
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .post-main {
     width: @desktop-width;
-  }
-
-  .post-main__photo {
-    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 0;
   }
 
   .post-main__about {
     width: 940px;
+    padding: 25px 0 14px 10px;
+  }
+
+  .post-main__photo img {
+    height: 506px;
+    width: 100%;
+  }
+
+  .post-main__description {
+    width: 900px;
+    margin: -2px 0 0 0;
+  }
+
+  .post-main__likes {
+    padding: 1px 0 0 0;
   }
 }

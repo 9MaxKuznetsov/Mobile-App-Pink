@@ -5,57 +5,177 @@
 
 .tariff__list {
   width: 1120px;
+  margin-top: 115px;
+  height: 283px;
 }
 
-.tariff td {
-  width: 280px;
-  outline: 1px solid #e5e5e5;
+.tariff__name {
+  border: 2px solid #e5e5e5;
+  color: #ffffff;
+  background-color: @navy;
+  border-bottom: none;
 }
 
 .tariff__list--index {
   margin-left: -540px;
 }
 
-.tariff__name {
-  color: #ffffff;
-
-  background-color: @navy;
+.tariff__type {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+  margin-left: 1px;
 }
 
 .tariff__option {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  padding: 17px 0 0 0;
+}
+
+.tariff__option--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .tariff__price {
   font-weight: @light;
   font-size: 24px;
   line-height: 30px;
+  padding-bottom: 15px;
 }
 
 .tariff__value {
+  width: 260px;
   line-height: 30px;
   text-transform: uppercase;
   .set-default-paragraph;
   background-color: #ffffff;
+  padding: 11px 0 10px 23px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+}
+
+
+.tariff__toggles {
+  padding-left: 120px;
+  margin-top: 35px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .tariff {
     overflow: visible;
     width: @tablet-width;
+    padding-top: 94px;
+    padding-bottom: 70px;
     margin: 0 auto;
   }
 
-  .tariff td {
-    width: 148px;
+  .tariff__value {
+    width: 152px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    padding: 7px 0 8px 16px;
+    text-transform: none;
+  }
+
+  .tariff tr {
+    border: none;
   }
 
   .tariff__list--index {
     margin: 0 auto;
-    padding: 0;
     width: 620px;
+  }
+
+  .tariff__option {
+    font-size: 16px;
+    padding: 10px 0 0 0;
+  }
+
+  .tariff__price {
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    margin-top: -3px;
+  }
+
+  .tariff__name {
+    width: 100px;
+    border: none;
+    border-right: 2px solid #e5e5e5;
+    padding: 0;
+  }
+
+  .smiles {
+    display: none;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .comments {
+    display: none;
+  }
+
+  .tariff__value:first-of-type {
+    border-top: 2px solid #e5e5e5;
+  }
+
+  .tariff__option--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+
+  .tariff__list {
+    height: 218px;
+  }
+
+  .tariff__type {
+    padding: 4px 0 0 1px;
+  }
+
+  .tariff__name:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .tariff__name:last-of-type {
+    border-right: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 }
 
@@ -66,9 +186,68 @@
 
   .tariff {
     width: @desktop-width;
+    padding-top: 190px;
+    padding-bottom: 94px;
+  }
+
+  .tariff__type {
+    margin: 0;
+    padding: 0;
   }
 
   .tariff td {
     width: 236px;
+  }
+
+  .tariff__option {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariff__price {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 2px 0 18px 0;
+    margin: 0;
+  }
+
+  .tariff__name {
+    padding: 7px 0 0 0;
+  }
+
+  .tariff__name:first-of-type {
+    padding: 6px 0 0 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .tariff__value {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 14px 0 15px 21px;
+  }
+
+  .tariff__name:last-of-type {
+    border-right: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .tariff__option--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 }

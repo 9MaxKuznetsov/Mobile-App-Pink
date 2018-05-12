@@ -23,7 +23,7 @@ body {
 
   font-family: "Open Sans", "Arial", sans-serif;
 
-  /*  * {
+  /* * {
     outline: 1px solid red;
   } */
 }
@@ -48,11 +48,31 @@ body {
     width: @tablet-width;
     margin: 0 auto;
   }
+
+  .center--flex {
+    display: flex;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .center {
     width: @desktop-width;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .full-width {
+    margin-left: calc(-100vw / 2 + 960px / 2);
+    margin-right: calc(-100vw / 2 + 960px / 2);
+  }
+
+  .post-main__photo img {
+    width: 100%;
   }
 }

@@ -1,22 +1,20 @@
 .form__title {
   .set-input-title;
+  padding: 0 0 5px 43px;
 }
 
 .form__header {
-  .set-form-introduction;
-  text-align: center;
   width: 230px;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  .set-form-introduction;
 }
 
 .form__list {
-  list-style: none;
   padding: 0;
-}
-
-.form__label {
-  .set-default-choice;
+  list-style: none;
 }
 
 .form__item {
@@ -32,16 +30,127 @@
   background-color: @lightgray;
 }
 
+.form__list--full-name {
+  margin-top: 34px;
+  margin-bottom: 42px;
+}
+
+.form__item--full-name {
+  margin-bottom: 17px;
+}
+
+.form__text-input {
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px 0 15px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #ededed;
+  border-radius: 3px;
+}
+
+.form__text-input::placeholder {
+  color: @navy;
+}
+
+.form__header--achievements {
+  display: block;
+  padding-top: 38px;
+}
+
+.form__group--achievements {
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+}
+
+.form__label {
+  .set-default-choice;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox + .form__label::before {
+  content: "";
+  position: absolute;
+  left: -69px;
+  top: -4px;
+  width: 39px;
+  height: 39px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.form__checkbox:checked + .form__label::before {
+  background: url("../img/icon-yes.svg") no-repeat @white 50% 48%;
+  background-size: 22px 16px;
+}
+
+.form__list--contacts {
+  margin-bottom: 25px;
+}
+
+.form__header--application {
+  padding-top: 38px;
+}
+
+.form__radio + .form__label::before {
+  content: "";
+
+  position: absolute;
+  left: -69px;
+  top: -4px;
+
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__label::after {
+  content: "";
+
+  position: absolute;
+  left: -57px;
+  top: 8px;
+
+  width: 15px;
+  height: 15px;
+  background-color: @cherry;
+  border-radius: 50%;
+}
+
+.form__group--application {
+  padding-bottom: 2px;
+  margin-bottom: 32px;
+}
+
+.form__title--describe {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+}
+
+.form__item--contacts {
+  margin-bottom: 17px;
+}
+
 @media (min-width: @tablet-width) {
   .form__group {
-    background-color: white;
+    background-color: #ffffff;
   }
 
   .form__item--full-name {
+    width: 620px;
     display: flex;
+    flex-basis: @tablet-width;
     flex-direction: row;
     justify-content: flex-start;
-    flex-basis: @tablet-width;
+    margin-bottom: 52px;
   }
 
   .form__item--full-name input {
@@ -49,55 +158,243 @@
   }
 
   .form__item--full-name label {
-    padding-right: 20px;
+    padding-right: 19px;
   }
 
   .form__list--full-name {
+    width: 620px;
     order: 1;
+    margin: 0 auto;
+    margin-top: 53px;
+  }
+
+  .form__title {
+    padding: 18px 0 0 0;
+    width: auto;
   }
 
   .form__group--application {
+    position: relative;
     order: 2;
+    width: 620px;
   }
 
   .form__group--achievements {
+    position: relative;
     order: 4;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 1px;
+    border-radius: 3px;
+    padding-bottom: 0;
   }
 
   .form__header--contacts {
     display: block;
+    left: 180px;
+    top: 8px;
+    width: 259px;
+    background-color: white;
   }
 
   .form__list--contacts {
     border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 45px 0 25px 0;
   }
 
   .form__item--contacts {
     display: flex;
     flex-direction: column;
+    padding: 0 0 0 0;
+    border-radius: 3px;
+  }
+
+  .form__item--contacts:not(:first-of-type) {
+    margin-top: 29px;
   }
 
   .form__item--contacts input {
-    margin: 0 auto;
     order: 1;
     width: 500px;
+    margin: 0 auto;
   }
 
   .form__item--contacts label {
     order: 2;
+  }
+
+  .form__header {
+    position: absolute;
+  }
+
+  .form__radio + .form__label::before {
+    left: -60px;
+    top: -4px;
+  }
+
+  .form__radio:checked + .form__label::after {
+    left: -48px;
+    top: 8px;
+  }
+
+  .form__header--application {
+    left: 125px;
+    top: -32px;
+    width: 370px;
+    background-color: white;
+  }
+
+  .form__title--contacts {
+    position: relative;
+    padding: 10px 0 0 77px;
+  }
+
+  .form__title--contacts::before {
+    content: "";
+    position: absolute;
+    left: 496px;
+    top: -62px;
+    width: 62px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+
+  .form__checkbox + .form__label::before {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__checkbox:checked + .form__label::after {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__header--achievements {
+    left: 91px;
+    top: -7px;
+    width: 436px;
+    background-color: white;
+  }
+
+  .form__title--describe {
+    position: absolute;
+    text-align: center;
+    width: 260px;
+    left: 177px;
+    top: -16px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__list--full-name {
     width: 436px;
+    margin: 66px 0 0 -22px;
     padding: 0;
-    margin: 0;
+  }
+
+  .form__item--full-name {
+    width: 436px;
+    margin-bottom: 53px;
+    padding: 0;
+  }
+
+  .form__header--application {
+    left: 55px;
+    top: -31px;
+  }
+
+  .form__list--contacts {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 13px;
+    padding: 0 0 12px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .form__item--contacts {
+    width: 373px;
+    margin: 42px 0 0 21px;
+    padding: 0;
+  }
+
+  .form__item--contacts:not(:first-of-type) {
+    margin: 42px 24px 0 0;
+    padding: 0;
+  }
+
+  .form__item--contacts input {
+    width: 376px;
+  }
+
+  .form__title--contacts {
+    padding: 10px 0 0 20px;
+  }
+
+  .form__title--contacts::before {
+    content: "";
+    position: absolute;
+    left: 313px;
+    top: -62px;
+    width: 62px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+
+  .form__header--contacts {
+    left: 350px;
+    top: 5px;
+  }
+
+  .form__group--achievements {
+    margin-top: 64px;
+    width: 940px;
+    padding-bottom: 7px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__header--achievements {
+    left: 250px;
+    top: -48px;
   }
 
   .form__group--application {
     width: 436px;
-    padding: 0;
-    margin: 0;
+    margin: 46px 0 0 -20px;
+    padding: 0 20px 0 0;
+  }
+
+  .form__radio + .form__label::before {
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__radio:checked + .form__label::after {
+    left: -47px;
+    top: 8px;
+  }
+
+  .form__title--describe {
+    left: 338px;
+  }
+
+  .form__checkbox + .form__label::before {
+    left: 0;
+    top: -4px;
+  }
+
+  .form__checkbox:checked + .form__label::after {
+    left: 0;
+    top: -4px;
   }
 }
