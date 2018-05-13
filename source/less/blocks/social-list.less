@@ -3,4 +3,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    width: 187px;
+    justify-content: space-around;
+    margin: -29px 0 0 0;
+  }
+
+  .social-list__item {
+    width: 51px;
+    height: 51px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 0 0 4px;
+  }
+
+  .social-list__item--twitter {
+    padding: 13px 0 0 14px;
+  }
+
+  .social-list__item--facebook {
+    padding: 12px 0 0 18px;
+  }
+
+  .social-list__item--y2b {
+    padding: 13px 0 0 17px;
+  }
 }

@@ -4,13 +4,15 @@
 
 @media (min-width: @tablet-width) {
   .effect {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
     width: @tablet-width;
   }
 
   .effect__introduction {
     width: 310px;
-    margin: 94px 0 0 329px;
+    margin: 64px 0 0 70px;
   }
 
   .effect__header {
@@ -24,35 +26,57 @@
     .set-default-paragraph;
     line-height: 24px;
     width: 297px;
-    margin: -20px 0 0 0;
+    margin: -19px 0 0 0;
   }
 
   .effect__more-link {
-    width: 290px;
+    width: 227px;
     font-size: 14px;
     line-height: 24px;
     color: @cherry;
     border-bottom: 1px solid @cherry;
     display: block;
     margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .effect__timer {
+    position: relative;
+    margin: 22px 0 0 21px;
+  }
+
+  .effect::after {
+    content: "24";
+    color: @cherry;
+    font-size: 96px;
+    font-weight: @bold;
+    padding: 16px 0 0 31px;
+    position: absolute;
+    left: 38px;
+    top: 112px;
+    width: 203px;
+    height: 203px;
+    border: 15px solid @cherry;
+    border-radius: 50%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect {
     width: @desktop-width;
-    padding-bottom: 115px;
+    padding-bottom: 66px;
   }
 
   .effect__introduction {
     width: 525px;
+    margin: 64px 0 0 21px;
   }
 
   .effect__header {
     width: inherit;
     line-height: 30px;
     font-size: 30px;
-    padding: 11px 0 0 46px;
+    padding: 12px 0 0 47px;
   }
 
   .effect__header br {
@@ -72,9 +96,27 @@
   }
 
   .effect__more-link {
+    width: 290px;
     font-size: 18px;
     line-height: 22px;
     display: block;
     margin: 34px 0 0 47px;
+  }
+
+  .effect__timer {
+    width: 298px;
+    height: 345px;
+    margin: 13px 0 0 10px;
+  }
+
+  .effect::after {
+    font-size: 120px;
+    padding: 20px 0 0 41px;
+    left: 32px;
+    top: 83px;
+    width: 253px;
+    height: 253px;
+    border: 17px solid @cherry;
+    border-radius: 50%;
   }
 }
