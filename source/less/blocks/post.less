@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   font-size: 0;
+  min-height: 300px;
 }
 
 .post__about {
   width: 280px;
   margin: 0 auto;
   background-color: @lightgray;
-  padding: 20px 0 0 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0 0 0 0;
+  margin-bottom: 0;
 }
 
 .post__photo {
@@ -24,21 +26,24 @@
 }
 
 .post__info {
-  margin: 0;
+  margin: 19px 0 0 18px;
   padding: 0;
 }
 
 .post__description {
   .set-default-paragraph;
+  display: block;
   width: 250px;
   line-height: 24px;
-  margin: 0;
+  padding: 0 0 9px 0;
+  margin: -1px 0 0 18px;
 }
 
 .post__likes {
   .set-likes;
-  margin: 0;
-  padding: 8px 0 21px 31px;
+  display: block;
+  margin: 0 0 0 50px;
+  padding-bottom: 21px;
 }
 
 .post__date {
@@ -70,26 +75,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
     padding: 0;
   }
 
   .post__info {
     margin-top: 25px;
-    padding: 0 0 0 28px;
+    padding: 0 0 0 10px;
   }
 
   .post__description {
     min-height: 50px;
-    width: 280px;
+    width: 260px;
     margin-bottom: 10px;
-    padding: 0 0 0 27px;
+    padding: 0 0 0 10px;
     line-height: 24px;
   }
 
   .post__likes {
     margin-bottom: 22px;
-    padding: 0 0 0 28px;
+    padding: 0 0 0 0;
+    margin-left: 27px;
   }
 }
 
@@ -100,5 +105,10 @@
 
   .post__description {
     margin: -12px 0 0 1px;
+    padding-left: 27px;
+  }
+
+  .post__likes {
+    padding-left: 1px;
   }
 }
