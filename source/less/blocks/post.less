@@ -41,9 +41,21 @@
 
 .post__likes {
   .set-likes;
+  position: relative;
   display: block;
   margin: 0 0 0 50px;
   padding-bottom: 21px;
+}
+
+.post__likes::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+
+  top: 6px;
+  left: -32px;
+  background-image: url("../img/icon-heart.svg");
 }
 
 .post__date {
@@ -96,6 +108,11 @@
     padding: 0 0 0 0;
     margin-left: 27px;
   }
+
+  .post__likes::before {
+    top: 4px;
+    left: 228px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -110,5 +127,9 @@
 
   .post__likes {
     padding-left: 1px;
+  }
+
+  .post__likes::before {
+
   }
 }

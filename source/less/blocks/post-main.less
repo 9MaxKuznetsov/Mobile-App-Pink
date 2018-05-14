@@ -8,7 +8,18 @@
 
 .post-main__likes {
   .set-likes;
+  position: relative;
   padding: 0 0 20px 49px;
+}
+.post-main__likes::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+
+  top: 6px;
+  left: 18px;
+  background-image: url("../img/icon-heart.svg");
 }
 
 .post-main__date {
@@ -87,6 +98,11 @@
     margin-top: -2px;
   }
 
+  .post-main__likes::before {
+   left: 108px;
+   top: 6px;
+  }
+
   .post-main__description {
     width: 570px;
     order: 3;
@@ -146,5 +162,9 @@
 
   .post-main__info {
     padding-left: 18px;
+  }
+
+  .post-main__likes::before {
+   left: 106px;
   }
 }
