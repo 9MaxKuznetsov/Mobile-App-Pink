@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 
 <body>
@@ -120,10 +122,10 @@
         </div>
         <div class="describe center">
           <label class="form__title form__title--describe" for="describe__text">Опишите свои эмоции</label>
-          <textarea id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          <textarea class="desribe__field" id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
         </div>
         <div class="contest__footer center">
-          <button class="contest__submit" type="submit">Отправить форму</button>
+          <button class="contest__submit">Отправить форму</button>
           <span class="contest__required"><span class="contest__required-star">*</span> — обязательные <span class="contest__required-more">для заполнения</span> поля</span>
         </div>
       </form>
@@ -159,7 +161,7 @@
       </p>
     </div>
     <div class="pop-up__actions">
-      <button class="pop-up__button">Закрыть окно</button>
+      <button class="pop-up__button pop-up__button--success">Закрыть окно</button>
     </div>
   </section>
   <section class="pop-up pop-up--failure center">
@@ -174,4 +176,5 @@
     </div>
   </section>
   <script src="js/picturefill.js"></script>
+  <script src="js/popups.js"></script>
 </body>

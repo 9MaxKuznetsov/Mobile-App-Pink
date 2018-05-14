@@ -28,7 +28,6 @@
 
 .pop-up__actions {
   background-color: #f2f2f2;
-  margin-bottom: 20px;
   padding: 46px 0 46px 0;
 }
 
@@ -52,7 +51,27 @@
 }
 
 @media (min-width: @desktop-width) {
-  .pop-up {
+  .pop-up-show {
     display: block;
+    animation: bounceInDown;
+    animation-duration: 0.7s;
+  }
+
+  .pop-up--failure {
+    position: fixed;
+    left: 1%;
+    top: 30%;
+    right: 1%;
+    bottom: 32.8%;
+    margin: 0 auto;
+  }
+
+  .pop-up--success {
+    position: fixed;
+    left: 1%;
+    top: 30%;
+    right: 1%;
+    bottom: 30.2%;
+    margin: 0 auto;
   }
 }
