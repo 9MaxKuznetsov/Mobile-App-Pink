@@ -177,6 +177,7 @@
     position: relative;
     order: 2;
     width: 620px;
+    margin-bottom: 0;
   }
 
   .form__group--achievements {
@@ -200,7 +201,7 @@
   .form__list--contacts {
     border: 2px solid #e5e5e5;
     border-radius: 3px;
-    padding: 45px 0 25px 0;
+    padding: 45px 0 9px 0;
   }
 
   .form__item--contacts {
@@ -250,16 +251,34 @@
     padding: 10px 0 0 77px;
   }
 
-  .form__title--contacts::before {
+  .form__title--phone::before {
     content: "";
     position: absolute;
     left: 496px;
     top: -62px;
     width: 62px;
-    height: 60px;
+    height: 62px;
     background-color: #e5e5e5;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 18px 18px;
+  }
+
+  .form__title--address::before {
+    content: "";
+    position: absolute;
+    left: 496px;
+    top: -62px;
+    width: 62px;
+    height: 62px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 19px 22px;
   }
 
   .form__checkbox + .form__label::before {

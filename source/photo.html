@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css" />
@@ -13,11 +14,15 @@
       <div class="main-nav__header">
         <div class="site-list-actions">
           <a class="site-list-actions__logo-link" href="index.html">
-            <image src="img/logo-pink-white-mobile.svg" width="75" height="22">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="site-list-actions__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение PINK">
+            </picture>
           </a>
           <a class="site-list-actions__close" href="#">
-            <image src="img/icon-menu-cross.svg" width="24" height="23">
-          </a>
+              <img class="site-list-actions__close-image" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
+            </a>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
@@ -30,7 +35,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-header">
+    <div class="page-header page-header--default">
       <div class="page-header__introduction center">
         <h1 class="page-header__main-title">Фотографии пользователей</h1>
       </div>
@@ -46,7 +51,13 @@
           <li class="photo-list__item photo-list__item--main">
             <article class="post-main">
               <div class="full-width">
-                <a class="post-main__photo" href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама"></a>
+                <a class="post-main__photo" href="#">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                    <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама">
+                  </picture>
+                </a>
               </div>
               <div class="post-main__about">
                 <span class="post-main__info"><b class="post-main__author">Анна </b> <span class="post-main__date">(5 минут назад)</span></span>
@@ -59,7 +70,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Машина">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Левон </b> <span class="post__date">(5 часов назад)</span></span>
                 <p class="post__description">
@@ -71,7 +88,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Антон </b> <span class="post__date">(12 часов назад)</span></span>
                 <p class="post__description">
@@ -83,7 +106,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"  width="280" height="180" alt="Окна">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Борис </b> <span class="post__date">(20 часов назад)</span></span>
                 <p class="post__description">
@@ -95,7 +124,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Ярмарка">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Сергей </b> <span class="post__date">(25 часов назад)</span></span>
                 <p class="post__description">
@@ -107,7 +142,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="От первого лица"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="От первого лица">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Максим </b> <span class="post__date">(40 часов назад)</span></span>
                 <p class="post__description">
@@ -119,7 +160,13 @@
           </li>
           <li class="photo-list__item">
             <article class="post">
-              <a class="post__photo" href="#"><img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло"></a>
+              <a class="post__photo" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло">
+              </picture>
+              </a>
               <div class="post__about">
                 <span class="post__info"><b class="post__author">Надежда </b> <span class="post__date">(45 часов назад)</span></span>
                 <p class="post__description">
@@ -139,7 +186,11 @@
     </div>
     <div class="page-main__wrapper page-main__wrapper--photo-add">
       <section class="photo-add center">
-        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+        <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Дорога">
+      </picture>
         <div class="photo-add__controls">
           <div class="filter">
             <ul class="filter-list">
@@ -196,18 +247,24 @@
   </main>
   <footer class="page-footer center">
     <div class="page-footer__upper">
-      <a class="page-footer__logo-link" href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+      <a class="page-footer__logo-link" href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+      </picture>
+      </a>
     </div>
-    <div class="page-footer__middle">
+    <div class="page-footer__middle page-footer__middle--default">
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-twitter.svg" width="18" height="14" alt="Twitter"/><span class="visually-hidden">VK</span></a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-facebook.svg" width="9" height="18" alt="Facebook"/><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-youtube.svg" width="15" height="13" alt="Youtube"/><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#"><img src="img/icon-twitter.svg" width="18" height="14" alt="Twitter"/><span class="visually-hidden">VK</span></a></li>
+        <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#"><img src="img/icon-facebook.svg" width="9" height="18" alt="Facebook"/><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-list__item social-list__item--y2b"><a class="social-list__link" href="#"><img src="img/icon-youtube.svg" width="15" height="13" alt="Youtube"/><span class="visually-hidden">Instagram</span></a></li>
       </ul>
     </div>
-    <div class="page-footer__bottom">
-      <span class="developed-by">Разработано</span>
-      <a class="developed-link" href="#"><img src="img/htmlacademy.svg" width="37" height="24" alt="HTML Academy"></a>
+    <div class="developed developed--default">
+      <span class="developed__by">Разработано</span>
+      <a class="developed__link" href="#"><img src="img/htmlacademy.svg" width="37" height="24" alt="HTML Academy"></a>
     </div>
   </footer>
 </body>

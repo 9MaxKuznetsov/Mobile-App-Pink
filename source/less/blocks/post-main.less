@@ -2,12 +2,13 @@
   .set-default-paragraph;
   margin: 0 auto;
   line-height: 24px;
-  padding: 0 0 9px 18px;
+  padding: 0 0 10px 17px;
+  margin-top: -1px;
 }
 
 .post-main__likes {
   .set-likes;
-  padding: 0 0 19px 50px;
+  padding: 0 0 20px 49px;
 }
 
 .post-main__date {
@@ -38,7 +39,22 @@
 }
 
 .post-main__photo {
+  position: relative;
   width: 1000px;
+}
+
+.post-main__photo::before {
+  position: absolute;
+  content: "ПАНОРАМА ДНЯ";
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 140px;
+  height: 36px;
+  right: 20px;
+  padding: 6px 0 0 18px;
+  background-color: @cherry;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,7 +67,7 @@
   .post-main__about {
     width: 620px;
     margin: 0 auto;
-    padding: 26px 0 15px 9px;
+    padding: 26px 0 15px 6px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,18 +77,20 @@
   .post-main__info {
     width: 250px;
     order: 1;
+    padding-left: 22px;
   }
 
   .post-main__likes {
     width: 150px;
     order: 2;
-    padding: 0 0 0 2px;
+    padding: 0 0 0 0;
+    margin-top: -2px;
   }
 
   .post-main__description {
     width: 570px;
     order: 3;
-    margin: 0;
+    padding: 0 0 9px 0;
   }
 
   .post-main__photo img {
@@ -86,12 +104,17 @@
     margin: 0;
     padding: 0;
   }
+
+  .post-main__photo::before {
+    bottom: 416px;
+    padding-left: 19px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .post-main {
     width: @desktop-width;
-    margin: 0 0 50px 0;
+    margin: 0 0 51px 0;
     padding: 0;
   }
 
@@ -108,9 +131,20 @@
   .post-main__description {
     width: 900px;
     margin: -2px 0 0 0;
+    padding-left: 18px;
   }
 
   .post-main__likes {
     padding: 1px 0 0 0;
+    margin-left: -5px;
+  }
+
+  .post-main__photo::before {
+    right: 10px;
+    bottom: 417px;
+  }
+
+  .post-main__info {
+    padding-left: 18px;
   }
 }

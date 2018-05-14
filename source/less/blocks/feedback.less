@@ -25,7 +25,7 @@
 }
 
 .feedback__toggles {
-  padding-left: 120px;
+  margin: 25px 0 13px 129px;
 }
 
 @media (min-width: @tablet-width) {
@@ -59,13 +59,20 @@
   }
 
   .feedback__toggles {
-    padding-left: 290px;
+    margin: 26px 0 0 299px;
+  }
+
+  .feedback {
+    margin-top: -60px;
+    margin-bottom: 13px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback {
+    position: relative;
     width: @desktop-width;
+    margin-top: -2px;
   }
 
   .feedback__quote {
@@ -77,10 +84,11 @@
     font-size: 24px;
     line-height: 30px;
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 36px;
   }
 
   .feedback__comment {
+    position: relative;
     width: 700px;
     margin: 0 auto;
     margin-top: 142px;
@@ -97,5 +105,35 @@
 
   .feedback__toggles {
     display: none;
+  }
+
+  .feedback::after {
+    position: absolute;
+    content: "";
+    top: 170px;
+    left: 10px;
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .feedback::before {
+    position: absolute;
+    content: "";
+    top: 170px;
+    right: 10px;
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .feedback__quote::before {
+    position: absolute;
+    content: "";
+    top: 28px;
+    right: 438px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-quotes.svg");
   }
 }

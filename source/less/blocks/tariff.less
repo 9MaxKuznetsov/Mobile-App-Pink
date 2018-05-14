@@ -1,6 +1,7 @@
 .tariff {
   overflow: hidden;
   width: 320px;
+  padding-bottom: 45px;
 }
 
 .tariff__list {
@@ -40,7 +41,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -1px;
 
     width: 74px;
@@ -73,8 +74,11 @@
 
 .tariff__toggles {
   padding-left: 120px;
-  margin-top: 35px;
-  padding-bottom: 21px;
+  margin: 33px 0 0 12px;
+}
+
+.tariff__toggles .toggles__item {
+  margin-right: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -82,7 +86,7 @@
     overflow: visible;
     width: @tablet-width;
     padding-top: 94px;
-    padding-bottom: 70px;
+    padding-bottom: 67px;
     margin: 0 auto;
   }
 
@@ -186,7 +190,7 @@
 
   .tariff {
     width: @desktop-width;
-    padding-top: 190px;
+    padding-top: 176px;
     padding-bottom: 94px;
   }
 

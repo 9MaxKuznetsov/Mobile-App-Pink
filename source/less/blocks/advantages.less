@@ -75,7 +75,7 @@
 
   .advantages__list {
     width: 310px;
-    margin: 119px 20px 0 0;
+    margin: 120px 20px 0 0;
   }
 
   .advantages__main-title {
@@ -90,7 +90,7 @@
   }
 
   .advantages__header {
-    margin-top: 8px;
+    margin-top: 7px;
   }
 
   .advantages__description {
@@ -106,6 +106,15 @@
   .advantages__item {
     margin-bottom: 35px;
   }
+
+  .advantages__footer {
+    overflow: visible;
+    margin: 40px 0 0 -61px;
+  }
+
+  .advantages__item:nth-of-type(3) {
+    padding-left: 2px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -116,6 +125,7 @@
 
   .advantages__main {
     width: @desktop-width;
+    margin-top: -1px;
   }
 
   .advantages__list {
@@ -142,11 +152,16 @@
 
   .advantages__item {
     width: 245px;
+    position: relative;
   }
 
   .advantages__item:nth-of-type(3) .advantages__title {
     width: 223px;
-    margin: 0 auto;
+    margin-left: 9px;
+  }
+
+  .advantages__item:nth-of-type(3) .advantages__description {
+    margin-left: -2px;
   }
 
   .advantages__footer {
@@ -172,5 +187,59 @@
 
   .advantages__header {
     margin-top: 31px;
+  }
+
+  .advantages__title--mood::after {
+    content: "";
+    position: absolute;
+    top: -357px;
+    left: -23px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px;
+    }
+  }
+
+  .advantages__title--changes::after {
+    content: "";
+    position: absolute;
+    top: -357px;
+    left: -20px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px;
+    }
+  }
+
+  .advantages__title--friends::after {
+    content: "";
+    position: absolute;
+    top: -357px;
+    left: -20px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px;
+    }
   }
 }
