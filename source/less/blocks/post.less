@@ -17,7 +17,13 @@
 }
 
 .post__photo {
+  z-index: 2;
   margin: 0 auto;
+  width: 280px;
+
+  &:focus {
+    outline: 2px solid @cherry;
+  }
 }
 
 .post__author {
@@ -127,5 +133,10 @@
 
   .post__likes {
     padding-left: 1px;
+  }
+
+  .post__author {
+    margin: 0;
+    padding: 0;
   }
 }

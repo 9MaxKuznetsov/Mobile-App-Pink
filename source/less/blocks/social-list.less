@@ -16,6 +16,14 @@
   border-radius: 50%;
   padding: 0;
   margin: 0 0 0 4px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social-list__item--twitter {
@@ -28,6 +36,12 @@
 
 .social-list__item--y2b {
   padding: 16px 0 0 13px;
+}
+
+.social-list__link {
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
 @media (min-width: @tablet-width) {

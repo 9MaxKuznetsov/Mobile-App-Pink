@@ -52,7 +52,17 @@
   border: 2px solid @cherry;
   border-radius: 50%;
   background-color: @lightgray;
+
+  &:active {
+    background-color: @cherry;
+  }
+
+  &:focus {
+    background-color: @cherry;
+    outline: none;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .range-filter {

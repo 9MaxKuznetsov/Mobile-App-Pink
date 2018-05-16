@@ -13,10 +13,20 @@
 
 .developed__link {
   margin: -7px 0 0 15px;
+
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
-.developed__link:hover svg {
-  fill: @navy;
+.developed__link svg {
+  &:hover {
+    fill: @navy;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 @media (min-width: @tablet-width) {

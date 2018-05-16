@@ -43,6 +43,26 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &:focus {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+}
+
+.contest__submit:disabled {
+  background-color: #e5e5e5;
 }
 
 .contest__required-star {
