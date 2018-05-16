@@ -44,6 +44,20 @@
   border: none;
   border-radius: 3px;
   padding: 14px 0 14px 0;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &:focus:not(:active) {
+    outline-color: @cherry;
+  }
 }
 
 .pop-up__button--failure {
@@ -55,23 +69,5 @@
     display: block;
     animation: bounceInDown;
     animation-duration: 0.7s;
-  }
-
-  .pop-up--failure {
-    position: fixed;
-    left: 1%;
-    top: 30%;
-    right: 1%;
-    bottom: 32.8%;
-    margin: 0 auto;
-  }
-
-  .pop-up--success {
-    position: fixed;
-    left: 1%;
-    top: 30%;
-    right: 1%;
-    bottom: 30.2%;
-    margin: 0 auto;
   }
 }

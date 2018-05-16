@@ -43,6 +43,12 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
+
+  &:focus:not(:active) {
+    background-color: white;
+    color: @cherry;
+    outline: none;
+  }
 }
 
 .download__description {

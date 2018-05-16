@@ -15,6 +15,25 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: @cherry;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    color: @cherry;
+  }
+}
+
+.site-list__item-link--active {
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .site-list__item {
@@ -61,9 +80,13 @@
       color: @cherry;
     }
 
-    &:focus {
+    &:active {
       color: white;
       opacity: 0.3;
+    }
+
+    &:focus:not(:active) {
+      color: @cherry;
     }
   }
 
