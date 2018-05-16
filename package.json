@@ -8,9 +8,15 @@
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
     "gulp": "^3.9.1",
-    "gulp-less": "4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^4.0.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-webp": "^3.0.0",
+    "posthtml": "^0.11.3",
+    "run-sequence": "^2.2.1",
     "stylelint": "^9.2.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -36,5 +42,9 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.3",
+    "svgstore": "^2.0.3"
   }
 }
