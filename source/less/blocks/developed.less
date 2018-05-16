@@ -8,28 +8,34 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 45px 0 0 6px;
+  margin: 44px 0 0 -1px;
 }
 
 .developed__link {
-  margin: -10px 0 0 8px;
+  margin: -7px 0 0 15px;
+
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
-.developed__link img {
-  width: 41px;
+.developed__link svg {
+  &:hover {
+    fill: @navy;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .developed {
-    margin: 24px 0 0 89px;
+    margin: 19px 0 0 89px;
   }
 
   .developed__link {
-    margin: -10px 0 0 8px;
-  }
-
-  .developed__link img {
-    width: 41px;
+    margin: -6px 0 0 16px;
   }
 }
 
@@ -39,11 +45,11 @@
   }
 
   .developed {
-    margin: 89px 0 0 226px;
+    margin: 83px 0 0 226px;
   }
 
   .developed__link {
-    margin: -8px 0 0 7px;
+    margin: -4px 0 0 12px;
   }
 
   .developed--default {

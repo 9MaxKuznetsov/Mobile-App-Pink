@@ -10,6 +10,28 @@
   width: 210px;
 }
 
+.filter-list__icon {
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: @cherry;
+  }
+}
+
+.filter-list__switch:active svg {
+  fill: @cherry;
+}
+
+.filter-list__switch:focus svg {
+  fill: @cherry;
+}
+
+.filter-list__switch:focus {
+  outline: none;
+}
+
 .filter-list__item {
   width: 50px;
 }
@@ -25,24 +47,35 @@
 }
 
 .filter-list__switch {
+  background-color: transparent;
   height: 50px;
   width: 50px;
   border: none;
 }
 
 .filter-list__switch--crop {
-  background: url("../img/icon-editor-crop.svg") no-repeat;
   margin-top: 20px;
 }
 
+.filter-list__switch--crop svg {
+  margin-left: -5px;
+}
+
 .filter-list__switch--fill {
-  background: url("../img/icon-editor-fill.svg") no-repeat;
   margin-top: 22px;
 }
 
+.filter-list__switch--fill svg {
+  margin-left: -5px;
+  margin-top: 1px;
+}
+
 .filter-list__switch--brightness {
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
-  margin: 28px 0 0 8px;
+  margin: 28px 0 0 6px;
+}
+
+.filter-list__switch--brightness svg {
+  margin: -10px 0 0 -19px;
 }
 
 .filter-list__switch img {
@@ -51,6 +84,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .filter-list__switch svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-list__switch--brightness svg {
+    width: 16px;
+    height: 16px;
+    margin: -2px 0 0 -7px;
+  }
+
   .filter-list {
     width: 275px;
     margin: 7px 0 0 0;
@@ -101,16 +145,21 @@
 
   .filter-list__switch--fill {
     background-size: 24px;
-    margin: 1px 0 0 5px;
+    margin: -1px 0 0 4px;
   }
 
   .filter-list__switch--brightness {
     background-size: 16px;
-    margin: 8px 0 0 5px;
+    margin: 7px 0 0 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .filter-list__switch svg {
+    width: 48px;
+    height: 48px;
+  }
+
   .filter-list {
     width: 410px;
     margin: 0 0 0 28px;
@@ -132,13 +181,27 @@
     margin: 54px 0 0 0;
   }
 
+  .filter-list__switch--crop svg {
+    margin: 0 0 0 -8px;
+  }
+
   .filter-list__switch--fill {
     background-size: 48px;
     margin: -11px 0 0 2px;
   }
 
+  .filter-list__switch--fill svg {
+    margin: 0 0 0 -8px;
+  }
+
   .filter-list__switch--brightness {
     background-size: 32px;
     margin: 0 0 0 3px;
+  }
+
+  .filter-list__switch--brightness svg {
+    width: 32px;
+    height: 32px;
+    margin: -7px 0 0 -26px;
   }
 }

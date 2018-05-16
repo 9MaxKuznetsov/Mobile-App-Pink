@@ -24,8 +24,8 @@
   border: 3px solid @cherry;
   color: @cherry;
   border-radius: 40px;
-  padding: 15px 0 15px 0;
-  margin-top: 1px;
+  padding: 14px 0 16px 0;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
@@ -36,6 +36,43 @@
 .photo-add__action--deny {
   border-color: #dddfe0;
   color: #dddfe0;
+
+  &:hover {
+    border-color: #b6babe;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    border-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    background-color: #b5b9be;
+    border-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+}
+
+.photo-add__action--post {
+  &:hover {
+    background-color: @cherry;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: @cherry;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &:focus {
+    background-color: @cherry;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -67,7 +104,7 @@
   .photo-add {
     width: 940px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     padding: 0;
     padding-bottom: 32px;
     flex-direction: flex-start;

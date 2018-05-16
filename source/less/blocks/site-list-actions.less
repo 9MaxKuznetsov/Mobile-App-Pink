@@ -8,11 +8,92 @@
 }
 
 .site-list-actions__logo-link {
-  padding: 15px 0 20px 20px;
+  width: 75px;
+  height: 22px;
+  margin: -2px 0 0 -52px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-list-actions__logo-link:focus:not(:active) .site-list-actions__logo-image {
+  fill: @cherry;
 }
 
 .site-list-actions__close {
-  padding: 15px 19px 0 0;
+  padding: 15px 19px 19px 0;
+}
+
+.site-list-actions__close-image {
+  &:hover {
+    fill: @cherry;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:focus:not(:active) {
+    outline: none;
+    fill: @cherry;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-list-actions__logo-glasses {
+  display: none;
+}
+
+.site-list-actions__logo-star {
+  display: none;
+}
+
+.site-list-actions__logo-image {
+  fill: white;
+
+  &:hover {
+    fill: @cherry;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+  }
+
+  &:focus:not(:active) {
+    outline: none;
+    fill: @cherry;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-list-actions__logo-image--index {
+  &:hover {
+    fill: white;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 1;
+  }
+
+  &:focus:not(:active) {
+    outline: none;
+    fill: white;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -21,15 +102,19 @@
     padding: 7px 0 17px 0;
   }
 
-  .site-list-actions__logo-image {
-    width: 147px;
-    height: auto;
+  .site-list-actions__close {
+    padding: 15px 19px 19px 0;
   }
 
-  .site-list-actions__close {
-    padding: 34px 19px 0 0;
+  .site-list-actions__logo-glasses--tablet {
+    display: inline;
+  }
+
+  .site-list-actions__logo-link {
+    margin: -3px 0 0 20px;
   }
 }
+
 
 @media (min-width: @desktop-width) {
   .site-list-actions__close {
@@ -46,12 +131,22 @@
   }
 
   .site-list-actions__logo-link {
-    margin: 0;
-    padding: 0 0 0 10px;
+    margin: 0 0 0 10px;
   }
 
-  .site-list-actions__logo-image {
-    width: 147px;
-    height: auto;
+  .site-list-actions__logo-start {
+    fill: @cherry;
+  }
+
+  .site-list-actions__logo-glasses--tablet {
+    display: none;
+  }
+
+  .site-list-actions__logo-glasses--desktop {
+    display: inline;
+  }
+
+  .site-list-actions__logo-star {
+    display: inline;
   }
 }

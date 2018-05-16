@@ -56,5 +56,23 @@
     line-height: 18px;
     text-transform: none;
     display: block;
+
+    &:hover {
+      color: @cherry;
+    }
+
+    &:focus {
+      color: white;
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__item-link--active {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: white;
+    }
   }
 }
