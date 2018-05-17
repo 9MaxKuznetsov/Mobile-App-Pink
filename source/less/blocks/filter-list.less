@@ -11,6 +11,7 @@
 }
 
 .filter-list__icon {
+  fill: #b5b9be;
   &:hover {
     fill: #8d949b;
   }
@@ -83,7 +84,15 @@
   width: 24px;
 }
 
+.filter-list__icon--active {
+  fill: @cherry;
+}
+
 @media (min-width: @tablet-width) {
+  .filter-list__icon {
+    fill: @cherry;
+  }
+
   .filter-list__switch svg {
     width: 24px;
     height: 24px;

@@ -52,6 +52,17 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  &::after {
+    content: "хит";
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    transform: rotate(-45deg);
+  }
 }
 
 .tariff__price {
@@ -191,6 +202,13 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 3px;
+      left: 2px;
+    }
   }
 
   .tariff__toggles {
@@ -282,14 +300,25 @@
       content: "";
       position: absolute;
       top: -5px;
-      left: 0;
+      left: 0px;
 
-      width: 61px;
-      height: 61px;
+      width: 74px;
+      height: 73px;
 
-      background-image: url("../../img/bg-hit-tablet.svg");
+      background-image: url("../../img/bg-hit.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 6px;
+      left: 11px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      transform: rotate(-45deg);
     }
   }
 

@@ -44,15 +44,15 @@ gulp.task("html", function () {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("build/less/**/*.less", ["style"]);
+  gulp.watch("build/*.html").on("change", server.reload);
 });
 
 gulp.task("clean", function () {
@@ -103,6 +103,7 @@ gulp.task("build", function (done) {
     "sprite",
     "html",
     "compress",
+    "serve",
     done
   );
 });

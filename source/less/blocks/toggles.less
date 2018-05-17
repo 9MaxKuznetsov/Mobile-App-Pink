@@ -6,6 +6,19 @@
   border-radius: 50%;
   padding: 0;
   margin-right: 15px;
+
+  &:hover:not(.toggles__item--active) {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+
+  &:focus:not(.toggles__item--active) {
+    outline: none;
+    background-color: #e9ebec;
+  }
 }
 
 .toggles__item--active {
@@ -14,4 +27,8 @@
   width: 12px;
   height: 12px;
   margin-right: 12px;
+
+  &:focus {
+    outline-color: @cherry;
+  }
 }
