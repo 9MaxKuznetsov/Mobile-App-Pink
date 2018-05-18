@@ -75,6 +75,7 @@
   margin-bottom: 22px;
 }
 .contacts__value--mail {
+  border-bottom: 1px solid transparent;
   &:hover {
     color: #000000;
     border-bottom: 1px solid #000000;
@@ -150,7 +151,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: 2px;
   }
 
@@ -189,7 +190,16 @@
     padding-top: 23px;
   }
 
+  .contacts__map iframe {
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
   .contacts__map {
+    padding: 0;
+    margin: 0;
     position: relative;
     margin-top: 23px;
     height: 500px;
@@ -202,21 +212,12 @@
     }
   }
 
-  .contacts__map iframe {
-    position: relative;
-    height: 500px;
-    width: 100%;
-  }
-
-  .contacts__map iframe::before {
+  .contacts__map::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
 
-    top: 0;
-    left: 0;
-
-    background: url("../../img/bg-triangle-white-footer.svg") no-repeat center;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center 0px;
   }
 }

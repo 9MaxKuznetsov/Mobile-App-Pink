@@ -12,14 +12,14 @@
   padding: 0 0 20px 49px;
 }
 
-.post-main__likes::before {
+.post-main__likes-button {
   position: absolute;
-  content: "";
+  border: none;
+  background-color: transparent;
+  left: 18px;
+  bottom: 26px;
   width: 13px;
   height: 12px;
-
-  top: 6px;
-  left: 18px;
   background-image: url("../img/icon-heart.svg");
 }
 
@@ -37,6 +37,7 @@
 }
 
 .post-main__about {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   background-color: @lightgray;
@@ -103,9 +104,11 @@
     margin-top: -2px;
   }
 
-  .post-main__likes::before {
-    left: 108px;
-    top: 6px;
+  .post-main__likes-button {
+    bottom: 0px;
+    left: 0px;
+    top: 30px;
+    left: 578px;
   }
 
   .post-main__description {
@@ -124,11 +127,6 @@
   .post-main__photo a {
     margin: 0;
     padding: 0;
-  }
-
-  .post-main__photo::before {
-    bottom: 416px;
-    padding-left: 19px;
   }
 }
 
@@ -169,7 +167,8 @@
     padding-left: 18px;
   }
 
-  .post-main__likes::before {
-    left: 106px;
+  .post-main__likes-button {
+    left: 896px;
+    top: 29px;
   }
 }

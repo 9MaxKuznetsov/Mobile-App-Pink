@@ -1,23 +1,31 @@
 .toggles__item {
   background-color: #bec2c7;
   border: none;
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   padding: 0;
   margin-right: 15px;
+  border: 3px solid white;
 
   &:hover:not(.toggles__item--active) {
     background-color: #7e868f;
   }
 
   &:active {
-    background-color: #e9ebec;
+    background-color: #ffffff;
+    border: 3px solid @navy;
+    width: 12px;
+    height: 12px;
+    outline: none;
   }
 
-  &:focus:not(.toggles__item--active) {
+  &:focus:not(.toggles__item--active):not(:active) {
     outline: none;
-    background-color: #e9ebec;
+    background-color: #ffffff;
+    border: 3px solid @navy;
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -26,9 +34,91 @@
   border: 3px solid @navy;
   width: 12px;
   height: 12px;
-  margin-right: 12px;
 
   &:focus {
     outline-color: @cherry;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .toggles__item--active {
+    display: none;
+  }
+
+  .toggles__item {
+    background-color: transparent;
+    border: none;
+    width: 0px;
+    height: 0px;
+    border-radius: 0;
+    padding: 0;
+
+    &:hover:not(.toggles__item--active) {
+      background-color: transparent;
+      border: none;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &:focus:not(.toggles__item--active) {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
+  .toggles__item--left-arrow {
+    position: absolute;
+    content: "";
+    top: 170px;
+    left: 10px;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-size: 22px 41px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .toggles__item--right-arrow {
+    position: absolute;
+    content: "";
+    top: 170px;
+    right: 10px;
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .toggles__item:active {
+    border: none;
+    width: 22px;
+    height: 41px;
+  }
+
+
+  .toggles__item:focus:not(.toggles__item--active):not(:active) {
+    border: none;
+    width: 22px;
+    height: 41px;
   }
 }
