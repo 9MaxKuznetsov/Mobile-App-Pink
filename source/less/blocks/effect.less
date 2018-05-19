@@ -60,6 +60,9 @@
     border: 15px solid @cherry;
     border-radius: 50%;
   }
+  .effect__description-bottom {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -69,8 +72,8 @@
   }
 
   .effect__introduction {
-    width: 525px;
-    margin: 63px 0 0 21px;
+    width: 540px;
+    margin: 64px 0 0 21px;
   }
 
   .effect__header {
@@ -92,8 +95,12 @@
     margin: -5px 0 0 47px;
   }
 
-  .effect__description br {
+  .effect__description br:not(.effect__description-bottom ) {
     display: none;
+  }
+
+  .effect__description-bottom {
+    display: block;
   }
 
   .effect__more-link {

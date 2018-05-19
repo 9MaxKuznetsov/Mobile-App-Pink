@@ -21,6 +21,10 @@
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
+
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
 .post-main__date {
@@ -127,6 +131,10 @@
   .post-main__photo a {
     margin: 0;
     padding: 0;
+  }
+
+  .post-main__photo::before {
+    bottom: 415px;
   }
 }
 
