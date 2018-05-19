@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -58,6 +61,7 @@
       <div class="main-nav__header">
         <div class="site-list-actions">
           <a class="site-list-actions__logo-link">
+            <span class="visually-hidden">PINK</span>
               <svg class="site-list-actions__logo-image site-list-actions__logo-image--index" width="147" height="40" viewBox="0 0 146.3 40.375">
                 <g class="site-list-actions__logo-pink">
                   <path  d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -338,6 +342,7 @@
     <footer class="page-footer index-footer center">
       <div class="page-footer__upper">
         <a class="page-footer__logo-link">
+        <span class="visually-hidden">PINK</span>
         <svg class="page-footer__logo-image page-footer__logo-image--index" width="147" height="40">
           <g class="page-footer__logo-pink">
             <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -401,9 +406,10 @@
       <div class="developed">
         <span class="developed__by">Разработано</span>
         <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="27" height="34" fill="#d22856">
-          <use xlink:href="#logo-htmlacademy"/>
-        </svg>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg width="27" height="34" fill="#d22856">
+            <use xlink:href="#logo-htmlacademy"/>
+          </svg>
       </a>
       </div>
     </footer>

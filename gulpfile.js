@@ -23,7 +23,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("sourced/css"))
     .pipe(minify())
     .pipe(rename("style.css"))
     .pipe(gulp.dest("source/css"))

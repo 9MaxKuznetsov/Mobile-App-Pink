@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 0 0px 0;
+  padding: 0 0 0 0;
   margin-bottom: 0;
 }
 
@@ -43,12 +43,12 @@
   width: 250px;
   line-height: 24px;
   padding: 0 0 9px 0;
-  margin: 0px 0 0 18px;
+  margin: 0 0 0 18px;
 }
 
 .post__likes {
   position: relative;
-  .set-likes;;
+  .set-likes;
   display: block;
   margin: 0 0 0 50px;
   padding-bottom: 20px;
@@ -63,6 +63,10 @@
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
+
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
 .post__date {
@@ -132,7 +136,7 @@
   }
 
   .post__description {
-    margin: 0px 0 0 1px;
+    margin: 0 0 0 1px;
     padding: 0;
     padding-left: 27px;
   }
@@ -140,7 +144,7 @@
   .post__likes {
     padding-left: 1px;
     padding-top: 11px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .post__author {
@@ -157,11 +161,11 @@
 
   .post__info {
     margin: 0;
-    padding: 25px 0px 0px 28px;
+    padding: 25px 0 0 28px;
     display: ininline-block;
   }
 
   .post__about {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }

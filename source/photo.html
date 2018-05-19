@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -46,6 +49,7 @@
       <div class="main-nav__header">
         <div class="site-list-actions">
           <a class="site-list-actions__logo-link" href="index.html">
+            <span class="visually-hidden">PINK</span>
               <svg class="site-list-actions__logo-image" width="147" height="40" viewBox="0 0 146.3 40.375">
                 <g class="site-list-actions__logo-pink">
                   <path  d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -112,6 +116,7 @@
             <article class="post-main">
               <div class="full-width">
                 <a class="post-main__photo" href="#">
+                  <span class="visually-hidden">Открыть фото</span>
                   <picture>
                     <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -129,13 +134,14 @@
                   Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <span class="post-main__likes">Нравится: 215</span>
-                <button class="post-main__likes-button"></button>
+                <button class="post-main__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+                <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -152,13 +158,14 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
                 <span class="post__likes">Нравится: 356</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+                <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -175,13 +182,14 @@
                   Соседи будут рады!
                 </p>
                 <span class="post__likes">Нравится: 666</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+                <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -198,13 +206,14 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
                 <span class="post__likes">Нравится: 215</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+                <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -221,13 +230,14 @@
                   Самая кубанская в мире!
                 </p>
                 <span class="post__likes">Нравится: 4</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+                <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -244,13 +254,14 @@
                   Где снег-то?
                 </p>
                 <span class="post__likes">Нравится: 150</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
           <li class="photo-list__item">
             <article class="post">
               <a class="post__photo" href="#">
+              <span class="visually-hidden">Открыть фото</span>
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -267,7 +278,7 @@
                   Всем GM и взаимные лайки!
                 </p>
                 <span class="post__likes">Нравится: 2560</span>
-                <button class="post__likes-button"></button>
+                <button class="post__likes-button"><span class="visually-hidden">Мне нравится</span></button>
               </div>
             </article>
           </li>
@@ -296,6 +307,7 @@
               <ul class="filter-list">
                 <li class="filter-list__item filter-list__item--crop">
                   <button class="filter-list__switch filter-list__switch--crop">
+                  <span class="visually-hidden">Обрезать</span>
                   <svg class="filter-list__icon filter-list__icon--active" width="48" height="48">
                     <use xlink:href="#icon-crop"/>
                   </svg>
@@ -305,12 +317,13 @@
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <button class="range-filter__toggle"></button>
+                      <button class="range-filter__toggle"><span class="visually-hidden">Управление обрезанием</span></button>
                     </div>
                   </div>
                 </li>
                 <li class="filter-list__item filter-list__item--fill">
                   <button class="filter-list__switch filter-list__switch--fill">
+                  <span class="visually-hidden">Заливка</span>
                   <svg class="filter-list__icon" width="48" height="48">
                     <use xlink:href="#icon-fill"/>
                   </svg>
@@ -320,12 +333,13 @@
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <button class="range-filter__toggle"></button>
+                      <button class="range-filter__toggle"><span class="visually-hidden">Управление заливкой</span></button>
                     </div>
                   </div>
                 </li>
                 <li class="filter-list__item filter-list__item--brightness">
                   <button class="filter-list__switch filter-list__switch--brightness">
+                    <span class="visually-hidden">Яркость</span>
                   <svg class="filter-list__icon" width="32" height="32">
                     <use xlink:href="#icon-contrast"/>
                   </svg>
@@ -335,7 +349,7 @@
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <button class="range-filter__toggle"></button>
+                      <button class="range-filter__toggle"><span class="visually-hidden">Управление яркостью</span></button>
                     </div>
                   </div>
                 </li>
@@ -362,6 +376,7 @@
     <footer class="page-footer page-footer__photo center">
       <div class="page-footer__upper">
         <a class="page-footer__logo-link" href="#">
+        <span class="visually-hidden">PINK</span>
         <svg class="page-footer__logo-image" width="147" height="40">
           <g class="page-footer__logo-pink">
             <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -425,6 +440,7 @@
       <div class="developed">
         <span class="developed__by">Разработано</span>
         <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
         <svg width="27" height="34" fill="#d22856">
           <use xlink:href="#logo-htmlacademy"/>
         </svg>
