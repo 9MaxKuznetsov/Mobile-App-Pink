@@ -1,7 +1,7 @@
 .tariff {
   overflow: hidden;
   width: 320px;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
   background-clip: padding-box;
 }
 
@@ -89,7 +89,11 @@
 
 .tariff__toggles {
   padding-left: 120px;
-  margin: 33px 0 0 9px;
+  margin: 40px 0 0 9px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .tariff__toggles .toggles__item {
@@ -249,7 +253,7 @@
 
   .tariff {
     width: @desktop-width;
-    padding-top: 163px;
+    padding-top: 184px;
     padding-bottom: 96px;
     background-clip: padding-box;
   }
@@ -339,5 +343,9 @@
     margin: -4px 0 0 2px;
     left: 101px;
     top: 22px;
+  }
+
+  .feedback__toggles {
+    display: none;
   }
 }

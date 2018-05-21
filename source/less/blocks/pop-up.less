@@ -1,6 +1,6 @@
 .pop-up {
   display: none;
-  width: 780px;
+  width: 320px;
   border-radius: 5px;
   box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -11,29 +11,35 @@
 }
 
 .pop-up__title {
-  font-size: 30px;
-  line-height: 40px;
+  width: 280px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: @bold;
   text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .pop-up__description {
   margin: 0 auto;
-  width: 386px;
-  font-size: 18px;
+  width: 268px;
+  font-size: 14px;
   line-height: 24px;
   color: @navy;
   text-align: center;
 }
 
 .pop-up__actions {
-  background-color: #f2f2f2;
-  padding: 46px 0 46px 0;
+  background-color: white;
+  padding: 0px 0px 50px 0px;             /* 46px 0 46px 0; */
 }
-
+.pop-up--success .pop-up__actions{
+  background-color: #f2f2f2;
+  padding: 50px 0px 50px 0px;
+}
 .pop-up__button {
   display: block;
-  width: 462px;
+  width: 280px;
   margin: 0 auto;
   background-color: #2aab6d;
   color: white;
@@ -60,14 +66,79 @@
   }
 }
 
-.pop-up__button--failure {
-  width: 300px;
+.pop-up-show {
+  display: block;
+  animation: bounceInDown;
+  animation-duration: 0.7s;
+}
+
+
+@media (min-width: @tablet-width) {
+  .pop-up {
+    width: 460px;
+  }
+
+  .pop-up__description br {
+    display: none;
+  }
+
+  .pop-up__description {
+    width: 320px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pop-up__actions  {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .pop-up--success .pop-up__actions {
+    padding-top: 50px;
+  }
+
+  .pop-up__title {
+    width: 240px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .pop-up-show {
-    display: block;
-    animation: bounceInDown;
-    animation-duration: 0.7s;
+  .pop-up {
+    width: 780px;
+  }
+
+  .pop-up__about {
+    padding: 38px 0 38px 0;
+  }
+
+  .pop-up__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__description {
+    width: 386px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pop-up__actions {
+    padding: 50px 0 50px 0;
+    background-color: #f2f2f2;
+  }
+
+  .pop-up__button {
+    width: 462px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 14px 0 14px 0;
+
+  }
+
+  .pop-up__button--failure {
+    width: 300px;
   }
 }

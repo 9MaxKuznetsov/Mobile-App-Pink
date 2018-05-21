@@ -6,6 +6,11 @@
   background-color: @navy;
   padding: 0;
   margin: 0 auto;
+  display: none;
+}
+
+.site-list--show {
+  display: block;
 }
 
 .site-list__item-link {
@@ -86,6 +91,12 @@
 
     &:focus:not(:active) {
       color: @cherry;
+    }
+  }
+
+  .site-list__item-link:active {
+    &:hover {
+      opacity: 1;
     }
   }
 
