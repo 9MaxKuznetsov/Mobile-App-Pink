@@ -9,6 +9,18 @@ var menu = document.querySelector(".site-list-actions__menu");
 var headerdefault = document.querySelector(".page-header--default");
 var phhand = document.querySelector(".page-header__hand");
 
+header.classList.remove("page-header--show");
+if (handh) {
+  handh.classList.remove("page-header--hand-show");
+  phhand.classList.remove("page-header__hand--show");
+}
+sitelist.classList.remove("site-list--show");
+wrapper.classList.remove("page-header-wrapper--show");
+burger.classList.remove("site-list-actions__close--show");
+actions.classList.remove("site-list-actions--show");
+menu.classList.add("site-list-actions__menu--open");
+
+
 menu.addEventListener('click', function() {
   menu.classList.toggle("site-list-actions__menu--open");
 })

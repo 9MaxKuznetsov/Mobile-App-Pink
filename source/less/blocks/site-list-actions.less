@@ -159,12 +159,20 @@
   padding: 0 19px 19px 0;
 }
 
-.site-list-actions__menu--open .cross {
+.site-list-actions__menu .hamburger {
+  display: none;
+}
+
+.site-list-actions__menu .cross {
   display: block;
 }
 
-.site-list-actions__menu--open .hamburger {
+.site-list-actions__menu--open .cross {
   display: none;
+}
+
+.site-list-actions__menu--open .hamburger {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -197,7 +205,6 @@
     margin: 14px 0 0 20px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .site-list-actions__close {

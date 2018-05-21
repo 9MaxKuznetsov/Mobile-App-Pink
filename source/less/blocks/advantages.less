@@ -31,6 +31,10 @@
   padding-top: 12px;
 }
 
+.advantages__description br {
+  display: none;
+}
+
 .advantages {
   display: flex;
   flex-direction: column;
@@ -117,9 +121,17 @@
     width: 100%;
     background: url("../img/bg-triangle-white.svg") no-repeat 0 0 @lightgray;
   }
+
+  .advantages__description br {
+    display: inline-block;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .advantages__description br {
+    display: none;
+  }
+
   .advantages {
     margin: 0;
     padding: 0;
