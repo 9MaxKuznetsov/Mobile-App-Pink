@@ -17,6 +17,34 @@
   }
 }
 
+.site-list-actions__menu {
+  display: block;
+  width: 49px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  margin-right: 18px;
+  margin-top: 16px;
+}
+
+.site-list-actions__menu:focus {
+  outline: none;
+}
+
+.site-list-actions__menu--index {
+  display: block;
+  width: 49px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  margin-left: 133px;
+  margin-top: 15px;
+}
+
+.site-list-actions__menu--index:focus {
+  outline: none;
+}
+
 .site-list-actions__button:focus .site-list-actions__close-image {
   fill: @cherry;
 }
@@ -211,5 +239,9 @@
 
   .site-list-actions--show .site-list-actions__logo-link {
     margin: -1px 0 0 10px;
+  }
+
+  .site-list-actions__menu {
+    display: none;
   }
 }
