@@ -15,36 +15,37 @@
 }
 
 .toggles__choice {
-    display: none;
+  display: none;
 
-    &:focus {
-      outline-color: @cherry;
-    }
+  &:focus {
+    outline-color: @cherry;
+  }
 }
 
 .toggles__radio {
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    cursor: pointer;
-    opacity: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .toggles__radio + .toggles__choice {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    margin: 0 0 0 -16px;
-    border-radius: 50%;
-    pointer-events: none;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin: 0 0 0 -16px;
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .toggles__radio--tariff + .toggles__choice {
   background-color: #f2f2f2;
 }
+
 .toggles__radio + .toggles__choice::after {
-  content: '.';
+  content: ".";
   color: transparent;
   position: absolute;
   display: block;
@@ -54,7 +55,7 @@
   border-radius: 50%;
   padding: 0;
   margin-right: 9px;
-  border: 3px solid white
+  border: 3px solid white;
 }
 
 .toggles__radio:hover + .toggles__choice::after {
@@ -68,6 +69,7 @@
 .toggles__radio--tariff + .toggles__choice::after {
   border-color: #f2f2f2;
 }
+
 .toggles__radio:checked + .toggles__choice::after {
   background-color: #ffffff;
   border: 3px solid @navy;
@@ -134,7 +136,7 @@
     &:focus {
       outline: none;
     }
-}
+  }
 
   .toggles__button--right-arrow {
     position: absolute;
