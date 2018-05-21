@@ -16,6 +16,10 @@
 
 .toggles__choice {
     display: none;
+
+    &:focus {
+      outline-color: @cherry;
+    }
 }
 
 .toggles__radio {
@@ -51,6 +55,14 @@
   padding: 0;
   margin-right: 9px;
   border: 3px solid white
+}
+
+.toggles__radio:hover + .toggles__choice::after {
+  background-color: #7e868f;
+}
+
+.toggles__radio:active + .toggles__choice::after {
+  background-color: #e9ebec;
 }
 
 .toggles__radio--tariff + .toggles__choice::after {
@@ -118,6 +130,10 @@
       opacity: 0.1;
       outline: none;
     }
+
+    &:focus {
+      outline: none;
+    }
 }
 
   .toggles__button--right-arrow {
@@ -136,6 +152,10 @@
 
     &:active {
       opacity: 0.1;
+    }
+
+    &:focus {
+      outline: none;
     }
 
     &:focus:not(:active) {
