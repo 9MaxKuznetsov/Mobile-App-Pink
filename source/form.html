@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 
 <body>
@@ -42,6 +44,7 @@
       <div class="main-nav__header">
         <div class="site-list-actions">
           <a class="site-list-actions__logo-link" href="index.html">
+            <span class="visually-hidden">PINK</span>
               <svg class="site-list-actions__logo-image" width="147" height="40" viewBox="0 0 146.3 40.375">
                 <g class="site-list-actions__logo-pink">
                   <path  d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -75,11 +78,19 @@
                 </g>
               </svg>
           </a>
-          <a class="site-list-actions__close" href="#" tabindex="-1">
-            <svg class="site-list-actions__close-image" width="24" height="23" fill="#ffffff" tabindex="0">
-              <use xlink:href="#icon-menu-cross"/>
+          <button class="site-list-actions__button">
+            <div class="site-list-actions__close site-list-actions__close--index site-list-actions__menu" href="#">
+              <svg class="site-list-actions__close-image" width="49" height="24" fill="#ffffff">
+                  <g class="hamburger">
+                    <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"></path>
+                    <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"></path>
+                  </g>
+                  <g class="cross">
+                    <path transform="matrix(1 0 0 1 24 0)" d="M16.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"></path>
+                  </g>
             </svg>
-            </a>
+        </div>
+      </button>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
@@ -89,11 +100,10 @@
         </ul>
       </div>
     </nav>
-    </div>
   </header>
   <main class="page-main contest">
     <div class="page-header page-header--default page-header--contest">
-      <div class="page-header__introduction page-header__introduction--contest center">
+      <div class="page-header__introduction page-header__introduction--default page-header__introduction--contest center">
         <h1 class="page-header__main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </div>
@@ -150,11 +160,11 @@
           <ul class="form__list form__list--contacts">
             <li class="form__item form__item--contacts">
               <label class="form__title form__title--phone form__title--contacts" for="contacts__phone-number">Номер телефона</label>
-              <input class="form__text-input" name="phone-number" type="text" id="contacts__phone-number" placeholder="Номер, пожалуйста" />
+              <input class="form__text-input form__text-input--contacts" name="phone-number" type="tel" id="contacts__phone-number" placeholder="Номер, пожалуйста" />
             </li>
             <li class="form__item form__item--contacts">
               <label class="form__title form__title--contacts form__title--address" for="contacts__e-mail">Адрес почты</label>
-              <input class="form__text-input" name="e-mail" type="text" id="contacts__e-mail" placeholder="Введите почту *" />
+              <input class="form__text-input form__text-input--contacts" name="e-mail" type="email" id="contacts__e-mail" placeholder="Введите почту *" />
             </li>
           </ul>
         </div>
@@ -177,7 +187,7 @@
         </div>
         <div class="describe center">
           <label class="form__title form__title--describe" for="describe__text">Опишите свои эмоции</label>
-          <textarea class="desribe__field" id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          <textarea id="describe__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
         </div>
         <div class="contest__footer center">
           <button type="submit" class="contest__submit">Отправить форму</button>
@@ -186,9 +196,11 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer center">
-    <div class="page-footer__upper">
-      <a class="page-footer__logo-link" href="#">
+  <div class="page-footer-wrapper">
+    <footer class="page-footer page-footer__form center">
+      <div class="page-footer__upper">
+        <a class="page-footer__logo-link" href="#">
+        <span class="visually-hidden">PINK</span>
         <svg class="page-footer__logo-image" width="147" height="40">
           <g class="page-footer__logo-pink">
             <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -221,65 +233,72 @@
           </g>
         </svg>
       </a>
-    </div>
-    <div class="page-footer__middle page-footer__middle--default">
-      <ul class="social-list">
-        <li class="social-list__item social-list__item--twitter">
-          <a class="social-list__link" href="#">
+      </div>
+      <div class="page-footer__middle page-footer__middle--default">
+        <ul class="social-list">
+          <li class="social-list__item social-list__item--twitter">
+            <a class="social-list__link" href="#">
             <svg width="19" height="15">
               <use xlink:href="#icon-twitter"/>
             </svg>
             <span class="visually-hidden">twitter</span>
           </a>
-        </li>
-        <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">
+          </li>
+          <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">
           <svg width="9" height="18">
             <use xlink:href="#icon-facebook"/>
           </svg>
           <span class="visually-hidden">Facebook</span>
         </a>
-      </li>
-        <li class="social-list__item social-list__item--y2b">
-          <a class="social-list__link" href="#">
+          </li>
+          <li class="social-list__item social-list__item--y2b">
+            <a class="social-list__link" href="#">
             <svg width="19" height="18">
               <use xlink:href="#icon-youtube"/>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
-        </li>
-      </ul>
-    </div>
-    <div class="developed">
-      <span class="developed__by">Разработано</span>
-      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg src="img/htmlacademy.svg" width="27" height="34" fill="#d22856">
+          </li>
+        </ul>
+      </div>
+      <div class="developed">
+        <span class="developed__by">Разработано</span>
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="34" fill="#d22856">
           <use xlink:href="#logo-htmlacademy"/>
         </svg>
       </a>
-    </div>
-  </footer>
-  <section class="pop-up pop-up--success center">
-    <div class="pop-up__about">
-      <h1 class="pop-up__title">Ваша заявка отправлена</h1>
-      <p class="pop-up__description">
-        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
-      </p>
-    </div>
-    <div class="pop-up__actions">
-      <button class="pop-up__button pop-up__button--success">Закрыть окно</button>
-    </div>
-  </section>
-  <section class="pop-up pop-up--failure center">
-    <div class="pop-up__about">
-      <h1 class="pop-up__title">Что-то пошло не так!</h1>
-      <p class="pop-up__description">
-        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
-      </p>
-    </div>
-    <div class="pop-up__actions">
-      <button class="pop-up__button pop-up__button--failure">ОК</button>
-    </div>
-  </section>
+      </div>
+    </footer>
+  </div>
+  <div class="pop-up-center">
+    <section class="pop-up pop-up--success center">
+      <div class="pop-up__about">
+        <h1 class="pop-up__title">Ваша заявка отправлена</h1>
+        <p class="pop-up__description">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br />оповестим вас.
+        </p>
+      </div>
+      <div class="pop-up__actions">
+        <button class="pop-up__button pop-up__button--success">Закрыть окно</button>
+      </div>
+    </section>
+  </div>
+  <div class="pop-up-center">
+    <section class="pop-up pop-up--failure center">
+      <div class="pop-up__about">
+        <h1 class="pop-up__title">Что-то пошло не так!</h1>
+        <p class="pop-up__description">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+        </p>
+      </div>
+      <div class="pop-up__actions">
+        <button class="pop-up__button pop-up__button--failure">ОК</button>
+      </div>
+    </section>
+  </div>
   <script src="js/picturefill.js"></script>
   <script src="js/popups.js"></script>
+  <script src="js/menu.js"></script>
 </body>

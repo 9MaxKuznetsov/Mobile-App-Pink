@@ -2,15 +2,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   margin: 0;
   padding: 0;
 }
 
+.site-list-actions__button {
+  width: 49px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-list-actions__button:focus .site-list-actions__close-image {
+  fill: @cherry;
+}
+
 .site-list-actions__logo-link {
-  width: 75px;
-  height: 22px;
   margin: -2px 0 0 -52px;
+  padding-top: 2px;
 
   &:focus {
     outline: none;
@@ -22,7 +35,17 @@
 }
 
 .site-list-actions__close {
-  padding: 15px 19px 19px 0;
+  padding: 0 19px 19px 0;
+  margin-top: 17px;
+  margin-left: -24px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-list-actions__close:focus .site-list-actions__close-image {
+  fill: @cherry;
 }
 
 .site-list-actions__close-image {
@@ -31,7 +54,6 @@
   }
 
   &:active {
-    fill: white;
     opacity: 0.3;
     outline: none;
   }
@@ -96,14 +118,35 @@
   }
 }
 
+.site-list-actions--show {
+  border-bottom: 1px solid black;
+}
+
+.site-list-actions--show .site-list-actions__logo-link {
+  padding: 0 19px 19px 0;
+  margin-top: 0;
+}
+
+.site-list-actions--show .site-list-actions__close {
+  padding: 0 19px 19px 0;
+}
+
+.site-list-actions__menu--open .cross {
+  display: block;
+}
+
+.site-list-actions__menu--open .hamburger {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .site-list-actions {
     width: @tablet-width;
-    padding: 7px 0 17px 0;
+    padding: 15px 0 15px 0;
   }
 
   .site-list-actions__close {
-    padding: 15px 19px 19px 0;
+    padding: 15px 19px 21px 0;
   }
 
   .site-list-actions__logo-glasses--tablet {
@@ -111,13 +154,29 @@
   }
 
   .site-list-actions__logo-link {
-    margin: -3px 0 0 20px;
+    margin: 12px 0 0 20px;
+  }
+
+  .site-list-acions--show {
+    padding: 15px 0 15px 0;
+  }
+
+  .site-list-actions--show .site-list-actions__close {
+    padding: 15px 19px 21px 0;
+  }
+
+  .site-list-actions--show .site-list-actions__logo-link {
+    margin: 14px 0 0 20px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .site-list-actions__close {
+    display: none;
+  }
+
+  .site-list-actions__button {
     display: none;
   }
 
@@ -131,7 +190,7 @@
   }
 
   .site-list-actions__logo-link {
-    margin: 0 0 0 10px;
+    margin: -1px 0 0 10px;
   }
 
   .site-list-actions__logo-start {
@@ -148,5 +207,9 @@
 
   .site-list-actions__logo-star {
     display: inline;
+  }
+
+  .site-list-actions--show .site-list-actions__logo-link {
+    margin: -1px 0 0 10px;
   }
 }

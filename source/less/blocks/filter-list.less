@@ -11,6 +11,8 @@
 }
 
 .filter-list__icon {
+  fill: #b5b9be;
+
   &:hover {
     fill: #8d949b;
   }
@@ -22,14 +24,11 @@
 
 .filter-list__switch:active svg {
   fill: @cherry;
-}
-
-.filter-list__switch:focus svg {
-  fill: @cherry;
-}
-
-.filter-list__switch:focus {
   outline: none;
+}
+
+.filter-list__switch:focus:not(:active) {
+  outline: 2px solid @cherry;
 }
 
 .filter-list__item {
@@ -51,6 +50,10 @@
   height: 50px;
   width: 50px;
   border: none;
+
+  &:active {
+    outline: none;
+  }
 }
 
 .filter-list__switch--crop {
@@ -83,7 +86,19 @@
   width: 24px;
 }
 
+.filter-list__icon--active {
+  fill: @cherry;
+}
+
 @media (min-width: @tablet-width) {
+  .filter-list__icon {
+    fill: @cherry;
+
+    &:focus {
+      fill: #8d949b;
+    }
+  }
+
   .filter-list__switch svg {
     width: 24px;
     height: 24px;
@@ -125,7 +140,7 @@
   }
 
   .filter-list__item--brightness {
-    padding: 1px 0 0 5px;
+    padding: 0 0 0 5px;
   }
 
   .filter-list__item--brightness img {
@@ -182,7 +197,7 @@
   }
 
   .filter-list__switch--crop svg {
-    margin: 0 0 0 -8px;
+    margin: 0 0 0 -10px;
   }
 
   .filter-list__switch--fill {
@@ -191,7 +206,7 @@
   }
 
   .filter-list__switch--fill svg {
-    margin: 0 0 0 -8px;
+    margin: 0 0 0 -10px;
   }
 
   .filter-list__switch--brightness {
@@ -202,6 +217,6 @@
   .filter-list__switch--brightness svg {
     width: 32px;
     height: 32px;
-    margin: -7px 0 0 -26px;
+    margin: -11px 0 0 -28px;
   }
 }

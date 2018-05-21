@@ -42,7 +42,7 @@
 .form__text-input {
   width: 280px;
   margin: 0 auto;
-  padding: 14px 0 15px 20px;
+  padding: 14px 20px 15px 20px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #ededed;
@@ -289,31 +289,31 @@
   .form__title--phone::before {
     content: "";
     position: absolute;
-    left: 495px;
-    top: -62px;
+    left: 494px;
+    top: -61px;
     width: 62px;
-    height: 61px;
+    height: 59px;
     background-color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 19px 19px;
+    background-position: 22px 19px;
   }
 
   .form__title--address::before {
     content: "";
     position: absolute;
-    left: 495px;
-    top: -62px;
+    left: 494px;
+    top: -61px;
     width: 62px;
-    height: 61px;
+    height: 59px;
     background-color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 21px 22px;
+    background-position: 23px 22px;
+  }
+
+  .form__text-input--contacts {
+    padding-right: 80px;
   }
 
   .form__checkbox + .form__label::before {
@@ -450,5 +450,21 @@
   .form__checkbox:checked + .form__label::after {
     left: 0;
     top: -4px;
+  }
+
+  .form__text-input--contacts {
+    padding-right: 90px;
+  }
+
+  .form__text-input--required {
+    border-color: red;
+
+    &:hover {
+      border-color: red;
+    }
+
+    &:focus {
+      border-color: red;
+    }
   }
 }

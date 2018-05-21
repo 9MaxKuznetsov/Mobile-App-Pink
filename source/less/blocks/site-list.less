@@ -2,10 +2,14 @@
   width: 320px;
   list-style: none;
   color: #ffffff;
-  display: block;
   background-color: @navy;
   padding: 0;
   margin: 0 auto;
+  display: none;
+}
+
+.site-list--show {
+  display: block;
 }
 
 .site-list__item-link {
@@ -15,6 +19,29 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: @cherry;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    color: @cherry;
+  }
+}
+
+.site-list__item-link--active {
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .site-list__item {
@@ -39,15 +66,10 @@
     padding: 0;
   }
 
-  .site-list__item:not(:first-of-type) {
-    border: none;
-    padding-top: 46px;
-    margin-left: 80px;
-  }
-
   .site-list__item {
     border: none;
     padding-top: 46px;
+    margin: 0;
   }
 
   .site-list__item-link {
@@ -61,9 +83,17 @@
       color: @cherry;
     }
 
-    &:focus {
+    &:active {
       color: white;
       opacity: 0.3;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:focus:not(:active) {
+      color: @cherry;
     }
   }
 

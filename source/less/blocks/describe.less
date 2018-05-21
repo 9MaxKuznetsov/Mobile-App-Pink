@@ -11,20 +11,21 @@
   font-size: 18px;
   line-height: 30px;
   border-radius: 3px;
+  resize: vertical;
+  padding: 12px 16px 0 16px;
 
   &:focus {
     outline-color: @cherry;
   }
 }
 
-.describe__field::-moz-placeholder {
+.describe textarea::-moz-placeholder {
   color: @navy;
   opacity: 1;
 }
 
 .describe textarea::placeholder {
   color: @navy;
-  padding: 12px 0 0 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,6 +44,7 @@
     height: 193px;
     margin: 0 auto;
     margin-top: 45px;
+    padding: 14px 0 0 18px;
   }
 }
 

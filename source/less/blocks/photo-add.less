@@ -76,7 +76,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo-add {
+  .photo-add__form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -98,13 +98,17 @@
     margin: 0 0 24px 4px;
     padding: 13px 7px 17px 0;
   }
+
+  .photo-add__controls {
+    padding-bottom: 2px;
+    margin: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo-add {
     width: 940px;
     margin: 0;
-    margin-bottom: 35px;
     padding: 0;
     padding-bottom: 32px;
     flex-direction: flex-start;

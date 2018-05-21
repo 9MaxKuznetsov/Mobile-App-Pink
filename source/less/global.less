@@ -22,8 +22,9 @@ body {
   padding: 0;
 
   font-family: "Open Sans", "Arial", sans-serif;
+  background-color: @navy;
 
-  /* {
+  /* * {
     outline: 1px solid red;
   } */
 }
@@ -34,13 +35,34 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .center {
   width: 320px;
   margin: 0 auto;
+}
+
+.pop-up-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  margin: 0 auto;
+
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.cross {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,8 +89,8 @@ body {
   }
 
   .full-width {
-    margin-left: calc(-100vw / 2 + 977px / 2);
-    margin-right: calc(-100vw / 2 + 977px / 2);
+    margin-left: ~"calc(-100vw / 2 + 977px / 2)";
+    margin-right: ~"calc(-100vw / 2 + 977px / 2)";
   }
 }
 

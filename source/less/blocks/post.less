@@ -6,6 +6,7 @@
 }
 
 .post__about {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   background-color: @lightgray;
@@ -42,26 +43,34 @@
   width: 250px;
   line-height: 24px;
   padding: 0 0 9px 0;
-  margin: -1px 0 0 18px;
+  margin: 0 0 0 18px;
 }
 
 .post__likes {
-  .set-likes;
   position: relative;
+  .set-likes;
   display: block;
   margin: 0 0 0 50px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
+
+  &:focus {
+    outline: 1px solid @cherry;
+  }
 }
 
-.post__likes::before {
+.post__likes-button {
   position: absolute;
-  content: "";
+  border: none;
+  background-color: transparent;
+  left: 18px;
+  bottom: 27px;
   width: 13px;
   height: 12px;
-
-  top: 6px;
-  left: -32px;
   background-image: url("../img/icon-heart.svg");
+
+  &:focus {
+    outline: 1px solid @cherry;
+  }
 }
 
 .post__date {
@@ -93,7 +102,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    padding-bottom: 0;
   }
 
   .post__info {
@@ -112,12 +121,16 @@
   .post__likes {
     margin-bottom: 22px;
     padding: 0 0 0 0;
-    margin-left: 27px;
+    margin-left: 28px;
   }
 
-  .post__likes::before {
-    top: 4px;
-    left: 228px;
+  .post__likes-button {
+    bottom: 30px;
+    left: 255px;
+
+    &:focus {
+      outline-color: @cherry;
+    }
   }
 }
 
@@ -127,16 +140,36 @@
   }
 
   .post__description {
-    margin: -12px 0 0 1px;
+    margin: 0 0 0 1px;
+    padding: 0;
     padding-left: 27px;
   }
 
   .post__likes {
     padding-left: 1px;
+    padding-top: 11px;
+    padding-bottom: 0;
   }
 
   .post__author {
+    display: ininline-block;
     margin: 0;
     padding: 0;
+  }
+
+  .post__date {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .post__info {
+    margin: 0;
+    padding: 25px 0 0 28px;
+    display: ininline-block;
+  }
+
+  .post__about {
+    padding-bottom: 0;
   }
 }

@@ -1,7 +1,8 @@
 .tariff {
   overflow: hidden;
   width: 320px;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
+  background-clip: padding-box;
 }
 
 .tariff__list {
@@ -33,7 +34,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 17px 0 0 0;
+  padding: 12px 0 0 0;
 }
 
 .tariff__option--hit {
@@ -42,15 +43,26 @@
   &::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -7px;
     left: -3px;
 
     width: 74px;
     height: 73px;
 
-    background-image: url("../../img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &::after {
+    content: "хит";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    transform: rotate(-45deg);
   }
 }
 
@@ -58,7 +70,7 @@
   font-weight: @light;
   font-size: 24px;
   line-height: 30px;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
   padding-top: 1px;
 }
 
@@ -69,18 +81,23 @@
   text-transform: uppercase;
   .set-default-paragraph;
   background-color: #ffffff;
-  padding: 9px 0 5px 23px;
+  padding: 5px 0 0 23px;
   border: 2px solid #e5e5e5;
   border-top: none;
+  background-clip: padding-box;
 }
 
 .tariff__toggles {
   padding-left: 120px;
-  margin: 33px 0 0 12px;
+  margin: 40px 0 0 9px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .tariff__toggles .toggles__item {
-  margin-right: 12px;
+  margin-right: 9px;
 }
 
 .tariff__yes {
@@ -92,6 +109,10 @@
 .tariff__no--index {
   position: absolute;
   right: 19px;
+}
+
+.tariff__toggles .toggles__item:not(.toggles__item--active) {
+  border-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
@@ -118,6 +139,7 @@
     padding-top: 94px;
     padding-bottom: 67px;
     margin: 0 auto;
+    background-clip: padding-box;
   }
 
   .tariff__value {
@@ -187,9 +209,16 @@
       width: 61px;
       height: 61px;
 
-      background-image: url("../../img/bg-hit-tablet.svg");
+      background-image: url("../img/bg-hit-tablet.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 0;
+      left: 4px;
     }
   }
 
@@ -224,8 +253,9 @@
 
   .tariff {
     width: @desktop-width;
-    padding-top: 176px;
-    padding-bottom: 94px;
+    padding-top: 184px;
+    padding-bottom: 96px;
+    background-clip: padding-box;
   }
 
   .tariff__type {
@@ -284,12 +314,23 @@
       top: -5px;
       left: 0;
 
-      width: 61px;
-      height: 61px;
+      width: 74px;
+      height: 73px;
 
-      background-image: url("../../img/bg-hit-tablet.svg");
+      background-image: url("../img/bg-hit.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 6px;
+      left: 11px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      transform: rotate(-45deg);
     }
   }
 
@@ -302,5 +343,9 @@
     margin: -4px 0 0 2px;
     left: 101px;
     top: 22px;
+  }
+
+  .feedback__toggles {
+    display: none;
   }
 }
