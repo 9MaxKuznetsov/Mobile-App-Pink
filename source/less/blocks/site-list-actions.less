@@ -146,10 +146,6 @@
   }
 }
 
-.site-list-actions--show {
-  border-bottom: 1px solid black;
-}
-
 .site-list-actions--show .site-list-actions__logo-link {
   padding: 0 19px 19px 0;
   margin-top: 0;
@@ -164,7 +160,7 @@
 }
 
 .site-list-actions__menu .cross {
-  display: block;
+  display: none;
 }
 
 .site-list-actions__menu--open .cross {
@@ -174,6 +170,11 @@
 .site-list-actions__menu--open .hamburger {
   display: block;
 }
+
+.site-list-actions__menu--no-cross .cross {
+  display: block;
+}
+
 
 @media (min-width: @tablet-width) {
   .site-list-actions {

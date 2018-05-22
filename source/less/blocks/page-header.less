@@ -40,10 +40,6 @@
   padding-top: 160px;
 }
 
-.page-header--hand-show {
-  padding-top: 160px;
-}
-
 .page-header__main-title {
   .set-default-page-header;
   padding-top: 15px;
@@ -95,6 +91,14 @@
   margin: 10px 0 0 0;
   width: 258px;
   height: 287px;
+}
+
+.page-header-wrapper--show .site-list-actions {
+  border-bottom: 1px solid black;
+}
+
+.page-header-wrapper--show .page-header--hand {
+  padding-top: 160px;
 }
 
 @media (min-width: @tablet-width) {
@@ -173,7 +177,7 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat @navy center -111px;
   }
 
-  .page-header--hand-show {
+  .page-header-wrapper--show .page-header--hand {
     min-height: 619px;
     padding-top: 100px;
   }
