@@ -7,12 +7,19 @@
   background: url("../img/bg-triangle-white.svg") no-repeat;
   background-color: @lightgray;
   background-size: 100%;
+  margin-top: 34px;
 }
 
 .page-main__wrapper--photo-add {
   position: relative;
   background-color: @lightgray;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__wrapper--tariff {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -25,5 +32,12 @@
   .page-main__wrapper--photo-add {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .page-main__wrapper--tariff {
+    margin-top: 43px;
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-color: @lightgray;
+    background-size: 100%;
   }
 }

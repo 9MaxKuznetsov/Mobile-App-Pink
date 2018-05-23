@@ -11,20 +11,22 @@
 
 @media (min-width: @tablet-width) {
   .achievements-list {
-    padding: 52px 0 6px 28px;
-    border: 2px solid #e5e5e5;
+    padding: 5px 0 0 28px;
+    width: 616px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .achievements-list {
+    width: 880px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 57px 0 0 0;
+    padding: 0 0 0 0;
     margin: 0;
-    margin-left: 59px;
+    margin-left: 58px;
+    margin-top: 48px;
     border: none;
   }
 
@@ -36,12 +38,6 @@
 
   .achievements-list__item--chuck {
     order: 2;
-    padding: 0 0 0 0;
-    margin: 0;
-  }
-
-  .achievements-list__item--tower-held {
-    order: 3;
     padding: 0 0 0 0;
     margin: 0;
   }
@@ -58,12 +54,6 @@
     margin: 0;
   }
 
-  .achievements-list__item--hotel-crushed {
-    order: 6;
-    padding: 0;
-    margin: 0;
-  }
-
   .achievements-list__item {
     padding: 0;
     margin: 0 0 52px 0;
@@ -73,5 +63,17 @@
     padding: 0 0 0 60px;
     margin: 0;
     width: 264px;
+  }
+
+  .achievements-list__item--tower-held {
+    order: 3;
+    padding: 0 0 0 0;
+    margin: 0;
+  }
+
+  .achievements-list__item--hotel-crushed {
+    order: 6;
+    padding: 0;
+    margin: 0;
   }
 }

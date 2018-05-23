@@ -1,6 +1,9 @@
 .post {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
   font-size: 0;
   min-height: 300px;
 }
@@ -11,8 +14,9 @@
   margin: 0 auto;
   background-color: @lightgray;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 0 0 0;
   margin-bottom: 0;
 }
@@ -35,6 +39,7 @@
 .post__info {
   margin: 19px 0 0 18px;
   padding: 0;
+  order: 1;
 }
 
 .post__description {
@@ -44,14 +49,18 @@
   line-height: 24px;
   padding: 0 0 9px 0;
   margin: 0 0 0 18px;
+  order: 2;
 }
 
 .post__likes {
   position: relative;
   .set-likes;
   display: block;
-  margin: 0 0 0 50px;
+  margin: 0 131px 0 0;
   padding-bottom: 20px;
+  width: 100px;
+  order: 4;
+  cursor: pointer;
 
   &:focus {
     outline: 1px solid @cherry;
@@ -59,14 +68,13 @@
 }
 
 .post__likes-button {
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  left: 18px;
-  bottom: 27px;
+  display: block;
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
+  order: 3;
+  margin-left: 18px;
+  margin-top: 5px;
 
   &:focus {
     outline: 1px solid @cherry;
@@ -98,16 +106,19 @@
 
   .post__about {
     min-height: 155px;
-    width: 100%;
+    width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
     padding-bottom: 0;
   }
 
   .post__info {
     margin-top: 25px;
     padding: 0 0 0 10px;
+    order: 1;
   }
 
   .post__description {
@@ -116,19 +127,22 @@
     margin-bottom: 10px;
     padding: 0 0 0 10px;
     line-height: 24px;
+    order: 2;
   }
 
   .post__likes {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     padding: 0 0 0 0;
     margin-left: 28px;
+    order: 3;
+    margin-right: 0;
   }
 
   .post__likes-button {
-    bottom: 30px;
-    left: 255px;
+    margin-right: 31px;
+    order: 4;
 
-    &:focus {
+    &:focus:not(:active) {
       outline-color: @cherry;
     }
   }
@@ -149,6 +163,7 @@
     padding-left: 1px;
     padding-top: 11px;
     padding-bottom: 0;
+    width: 140px;
   }
 
   .post__author {

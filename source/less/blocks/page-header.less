@@ -28,8 +28,8 @@
 }
 
 .page-header--show {
-  margin-top: 195px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat @navy center -5px;
+  margin-top: 256px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat @navy center -66px;
 }
 
 .page-header--hand {
@@ -37,7 +37,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0;
-  padding-top: 160px;
+  padding-top: 166px;
 }
 
 .page-header__main-title {
@@ -99,6 +99,19 @@
 
 .page-header-wrapper--show .page-header--hand {
   padding-top: 160px;
+}
+
+.page-header--show-hand {
+  padding-top: 99px;
+}
+
+.page-header--show-default {
+  margin-top: 255px;
+  min-height: 172px;
+}
+
+.page-header--show-default .page-header__introduction {
+  margin-top: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -177,9 +190,20 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat @navy center -111px;
   }
 
-  .page-header-wrapper--show .page-header--hand {
-    min-height: 619px;
+
+  .page-header--show-default {
+    margin-top: 255px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat @navy center -111px;
+    min-height: 328px;
+  }
+
+  .page-header--show-default .page-header__introduction {
+    margin-top: -1px;
+  }
+
+  .page-header--show-hand {
     padding-top: 100px;
+    min-height: 619px;
   }
 }
 

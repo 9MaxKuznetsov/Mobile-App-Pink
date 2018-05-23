@@ -2,6 +2,8 @@
   text-align: center;
   .set-default-header;
   line-height: 28px;
+  z-index: 50;
+  display: block;
 }
 
 .advantages__main-title:first-of-type {
@@ -19,7 +21,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 115px;
+  margin-top: 148px;
 }
 
 .advantages__description {
@@ -42,6 +44,7 @@
 
 .advantages__wrapper {
   background: url("../img/bg-triangle-white.svg") no-repeat 0 0 @lightgray;
+  margin-top: -33px;
 }
 
 .advantages__header {
@@ -60,6 +63,11 @@
 .advantages__footer img {
   margin-left: 82px;
   margin-top: 10px;
+}
+
+.advantages__main-title--center {
+  z-index: 10;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -120,6 +128,7 @@
   .advantages__wrapper {
     width: 100%;
     background: url("../img/bg-triangle-white.svg") no-repeat 0 0 @lightgray;
+    margin: 0;
   }
 
   .advantages__description br {
@@ -147,7 +156,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: @desktop-width;
-    margin: 433px 0 0 0;
+    margin: 346px 0 0 0;
   }
 
   .advantages__title {
@@ -183,6 +192,7 @@
   }
 
   .advantages__wrapper {
+    margin-top: 87px;
     background: url("../img/bg-triangle-white.svg") no-repeat 0 0 @lightgray;
     background-size: 100%;
   }
