@@ -26,6 +26,10 @@
 }
 
 .page-footer__logo-link {
+  display: block;
+  width: 147px;
+  height: 40px;
+
   &:focus {
     outline: none;
   }
@@ -79,6 +83,39 @@
 
 .page-footer__logo-link:focus:not(:active) .page-footer__logo-image {
   fill: @cherry;
+}
+
+.page-footer__logo-link:hover .page-footer__logo-blue {
+  display: none;
+}
+
+.page-footer__logo-blue--pink {
+  display: none;
+}
+
+.page-footer__logo-link:hover .page-footer__logo-blue--pink {
+  display: block;
+}
+
+.page-footer__logo-link:active .page-footer__logo-blue--pink {
+  display: none;
+}
+
+.page-footer__logo-link:active .page-footer__logo-blue {
+  display: block;
+  opacity: 0.3;
+}
+
+.page-footer__logo-link--index:hover .page-footer__logo-blue--pink {
+  display: none;
+}
+
+.page-footer__logo-link--index:active .page-footer__logo-blue--pink {
+  display: none;
+}
+
+.page-footer__logo-link--index:active .page-footer__logo-blue {
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
