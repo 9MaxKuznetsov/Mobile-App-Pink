@@ -191,23 +191,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__fieldset--describe.width-fix > legend {
+    margin: 0 auto;
+    width: 220px;
+  }
+
   .form__text-input {
     height: 63px;
   }
 
-  .form__fieldset > legend {
+  @-moz-document url-prefix() {
+    .form__fieldset > legend {
     position: absolute;
     left: 50%;
     top: -12px;
     background: white;
     transform: translate(-50%, 0);
   }
-
-  .form__fieldset.width-fix > legend {
-    width: auto;
-    text-align: center;
-    margin: 0;
-  }
+}
 
   .form__fieldset--achievements.width-fix > legend {
     width: 400px;
@@ -235,13 +236,13 @@
     order: 2;
     margin: 0 auto;
     padding-bottom: 13px;
-    margin-top: 12px;
+    margin-top: 0px;
   }
 
   .form__fieldset--pm-us {
     width: 620px;
     order: 3;
-    margin-top: 67px;
+    margin-top: 58px;
   }
 
   .form__fieldset--achievements {
@@ -249,13 +250,13 @@
     order: 4;
     padding-bottom: 6px;
     margin: 0 auto;
-    margin-top: 67px;
+    margin-top: 58px;
   }
 
   .form__fieldset--describe {
     width: 620px;
     order: 5;
-    margin-top: 62px;
+    margin-top: 50px;
   }
 
   .form__group {
@@ -314,12 +315,13 @@
 
   .form__header--contacts {
     display: block;
+    width: 300px;
     padding: 0 25px 0 25px;
   }
 
   .form__list--contacts {
     border-radius: 3px;
-    padding: 28px 2px 0 0;
+    padding: 21px 2px 0 0;
   }
 
   .form__item--contacts {
@@ -409,8 +411,8 @@
   }
 
   .form__title--describe {
-    padding: 0 35px 0 35px;
-    margin: 0 auto;
+    width: 120px;
+    padding: 0 0px 0 18px;
   }
 }
 
@@ -421,7 +423,7 @@
   }
 
   .form__fieldset--application {
-    margin: 62px 0 0 0;
+    margin: 52px 0 0 0;
     padding: 0;
     width: 436px;
     padding-bottom: 15px;
@@ -431,20 +433,20 @@
     width: 930px;
     margin: 0 auto;
     padding: 0;
-    margin-top: 14px;
-    padding-bottom: 12px;
+    margin-top: 56px;
+    padding-bottom: 13px;
   }
 
   .form__fieldset--achievements {
     width: 940px;
     margin: 0 auto;
-    margin-top: 68px;
+    margin-top: 57px;
     padding-bottom: 8px;
   }
 
   .form__fieldset--describe {
     width: 936px;
-    margin-top: 62px;
+    margin-top: 51px;
     padding-bottom: 0;
   }
 
@@ -460,6 +462,10 @@
     padding: 0;
   }
 
+  .form__item--full-name:last-of-type {
+    margin-bottom: 0px;
+  }
+
   .form__header--application {
     width: 360px;
     padding: 0 2px 0 2px;
@@ -468,7 +474,7 @@
   .form__list--contacts {
     width: 936px;
     margin: 0 auto;
-    margin-top: -2px;
+    margin-top: 0px;
     padding: 0 0 0 0;
     display: flex;
     flex-direction: row;
@@ -478,12 +484,12 @@
 
   .form__item--contacts {
     width: 373px;
-    margin: 42px 0 0 21px;
+    margin: 35px 0 0 21px;
     padding: 0;
   }
 
   .form__item--contacts:not(:first-of-type) {
-    margin: 42px 24px 0 0;
+    margin: 35px 24px 0 0;
     padding: 0;
   }
 
